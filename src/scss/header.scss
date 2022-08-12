@@ -1,0 +1,117 @@
+
+.header {
+
+    // .header__top
+
+    &__top {
+        background-color: $color-black;
+        color: #fff; 
+    }
+}
+.top-header {
+
+    // .top-header__container
+    padding: 10px 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        min-height: 50px;
+ 
+    }
+
+    // .top-header__menu
+
+    &__menu {
+        flex: 1 1 auto;
+    }
+
+    // .top-header__user
+
+    &__user {
+        display: inline-flex;
+        align-items: center;
+        line-height: math.div(22, 18);  
+        font-weight: 600;
+        &::before {
+            font-size: rem(28);
+            margin-right: em(15);
+        }
+    }
+}
+.menu {
+
+    // .menu__body
+
+    &__body {
+    }
+
+    // .menu__list
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 5px;
+        @include adaptive-value("column-gap", 60, 20, 0);
+    }
+
+    // .menu__link
+
+    &__link {
+        font-size: rem(16);
+        line-height: math.div(20, 16);
+    }
+
+    // .menu__burger
+
+    &__burger {
+    }
+}
+
+
+
+.menu__burger {
+    display: none;
+    @media (max-width: $mobile) {
+        display: block;
+        position: relative;
+        z-index: 5;
+        flex: 0 0 30px;
+        height: 18px;
+        cursor: pointer;
+        span, &::before, &::after {
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 10%;
+            background: #fff;
+            transition: all 0.3s ease 0s;
+        }
+        span {top: 50%;transform: scale(1) translate(0, -50%);}
+        &::before {content: "";top: 0px;}
+        &::after {content: "";bottom: 0px;}
+        &._active {
+            span {transform: scale(0) translate(0, -50%);}
+            &::before {top: 50%;transform: rotate(-45deg) translate(0, -50%);}
+            &::after {bottom: 50%;transform: rotate(45deg) translate(0, 50%);}
+        }}}
+// .menu__body {
+//     position: fixed;
+//     top: 0;
+//     left: -100%;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 0, 0, 0.95);
+//     padding: 100px 30px 30px 30px;
+//     transition: left 0.3s ease 0s;
+//     overflow: auto;
+//     &._active {left: 0;}
+//     &::before {
+//         content: "";
+//         position: fixed;
+//         width: 100%;
+//         height: 50px;
+//         top: 0;
+//         left: 0;
+//         // background: #00218f;
+//         z-index: 2;}}
