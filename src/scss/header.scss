@@ -2,15 +2,17 @@
 .header {
 
     // .header__top
-
     &__top {
         background-color: $color-black;
         color: #fff; 
     }
     
     // .header__body
-
     &__body {
+    }
+
+    // .header__catalog
+    &__catalog {
     }
 }
 //!===================================================
@@ -219,6 +221,8 @@
     // .phones-header__list
 
     &__list {
+        display: none;
+
         position: absolute;
         top: 100%;
         left: 0;
@@ -258,13 +262,38 @@
 //!===================================================
 .catalog-header {
     background: $color-black;
+    padding: rem(10) 0;
+    // .catalog-header__container
+    &__container {
+        min-height: rem(50);
+        display: flex;
+        align-items: center;
+    }
+
+    // .catalog-header__list
+
+    &__list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(20);
+        color: #fff;
+        & li {
+            // flex: 0 1 20%;
+        }
+    }
+
+    // .catalog-header__link
+
+    &__link {
+    }
 }
 
 
 
 
-
-.burger {
+.top-header__burger {
     display: none;
     @media (max-width: #{$mobile + px}) {
         display: block;
