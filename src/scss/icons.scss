@@ -15,7 +15,12 @@
     }
 }
 
-
+.__icon-arrow-down:before {
+  content: "\e912";
+}
+.__icon-arrow-right:before {
+  content: "\e913";
+}
 .__icon-cart:before {
     content: "\e900";
   }

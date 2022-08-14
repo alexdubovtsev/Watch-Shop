@@ -6,19 +6,6 @@
 	@return $result;
 }
 
-// //to REM
-// @function rem($px) {
-// 	$result: math.div($px, 16) + rem;
-// 	@return $result;
-// }
-
-// //to EM
-// @function em($px, $baseFontSize) {
-// 	// $result: math.div($px, $fontSize) + em;
-// 	$result: math.div($px, $baseFontSize) + em;
-// 	@return $result;
-// }
-
 //to REM
 @function rem($px) {
 	@if unit($px) == rem {

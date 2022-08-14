@@ -7,7 +7,13 @@
         background-color: $color-black;
         color: #fff; 
     }
+    
+    // .header__body
+
+    &__body {
+    }
 }
+//!===================================================
 .top-header {
 
     // .top-header__container
@@ -35,10 +41,12 @@
         font-weight: 600;
         &::before {
             font-size: rem(28);
-            margin-right: em(15, 16);
+            margin-right: em(15, 28);
         }
     }
 }
+
+
 .menu {
 
     // .menu__body
@@ -64,15 +72,201 @@
 
     // .menu__burger
 
-    &__burger {
+}
+
+//!===================================================
+.body-header {
+    padding: rem(10) 0;
+    background-color: #ecf1f2;
+    // .body-header__container
+    &__container {
+        min-height: rem(70);
+        display: flex;
+        align-items: center;
+    }
+
+    // .body-header__logo
+
+    &__logo {
+        position: relative;
+        height: rem(60);
+        width: rem(90);
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .body-header__search
+
+    &__search {
+        flex: 1 1 auto;
+        padding-right: rem(20);
+        @include adaptive-value("padding-left", 158, 20, 1)
+    }
+
+    // .body-header__actions
+
+    &__actions {
+    }
+}
+.search-header {
+    max-width: rem(377);
+    background-color: rgba(7, 7, 7, .03);
+    border-radius: 3px;
+    border: 1px solid rgba(4, 4, 4, .5);
+    position: relative;
+    // .search-header__button
+
+    &__button {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: rem(8);
+        width: rem(41);
+        height: rem(41);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: rem(20);
+    }
+
+    // .search-header__input
+
+    &__input {
+        width: 100%;
+        background-color: transparent;
+        border-radius: rem(3);
+        height: rem(41);
+        padding: 0 rem(20) 0 rem(50);
+        color: $mainColor;
+        &::placeholder {
+            color: rgba(0, 0, 0, .5);
+        }
+    }
+}
+
+.actions-header {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    // .actions-header__location
+    &__location {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 600;
+        margin: 0 rem(25) 0 0;
+        &::before {
+            font-size: rem(24);
+            margin: 0 em(10,24) 0 0;
+        }
+
+    }
+
+    // .actions-header__phones
+
+    &__phones {
+    }
+
+    // .actions-header__favourite
+
+    &__favourite {
+    }
+
+    // .actions-header__cart
+
+    &__cart {
+    }
+}
+.phones-header {
+
+    // .phones-header__items
+
+    &__items {
+    }
+
+    // .phones-header__item
+
+    &__item {
+        display: flex;
+        position: relative;
+    }
+
+    // .phones-header__phone
+
+    &__phone {
+        font-weight: 600;
+        line-height: math.div(22, 18);
+        white-space: nowrap;
+    }
+
+    // .phones-header__arrow
+
+    &__arrow {
+        color: #c93d4b;
+        font-size: rem(20);
+        margin-left: em(10, 20);
+        transition: transform 0.3s ease 0s;
+        &._spoller-active {
+            transform: rotate(-180deg);
+        }
+    }
+
+    // .phones-header__list
+
+    &__list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: rem(15);
+        background-color: #fff;
+        border-radius: rem(10);
+        & li {
+            &:not(:last-child) {margin-bottom: em(8, 18);}
+        }
+    }
+}
+.cart-header {
+
+    // .cart-header__icon
+
+    &__icon {
+    }
+
+    // .cart-header__body
+
+    &__body {
+    }
+
+    // .cart-header__summ
+
+    &__summ {
+    }
+
+    // .cart-header__link
+
+    &__link {
     }
 }
 
 
+//!===================================================
+.catalog-header {
+    background: $color-black;
+}
 
-.menu__burger {
+
+
+
+
+.burger {
     display: none;
-    @media (max-width: $mobile) {
+    @media (max-width: #{$mobile + px}) {
         display: block;
         position: relative;
         z-index: 5;
