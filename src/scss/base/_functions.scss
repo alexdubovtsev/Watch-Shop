@@ -6,15 +6,35 @@
 	@return $result;
 }
 
+// //to REM
+// @function rem($px) {
+// 	$result: math.div($px, 16) + rem;
+// 	@return $result;
+// }
+
+// //to EM
+// @function em($px, $baseFontSize) {
+// 	// $result: math.div($px, $fontSize) + em;
+// 	$result: math.div($px, $baseFontSize) + em;
+// 	@return $result;
+// }
+
 //to REM
 @function rem($px) {
-	$result: math.div($px, 16) + rem;
-	@return $result;
+	@if unit($px) == rem {
+		@return $px;
+	}
+	@return math.div($px, 16) * 1rem;
 }
 
 //to EM
-@function em($px) {
-	// $result: math.div($px, $fontSize) + em;
-	$result: math.div($px, $fontSize) + em;
-	@return $result;
+@function em($px, $baseFontSize) {
+	@if unitless($px) {
+		$px: $px * 1px;
+	}
+	@if unitless($baseFontSize) {
+		$baseFontSize: $baseFontSize * 1px;
+	}
+	@return math.div($px, $baseFontSize) * 1em;
 }
+

@@ -204,17 +204,17 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media (max-width: 1200/1.125remem) {
+@media (max-width: 1200px) {
   [class*=__container] {
     max-width: 60.625rem;
   }
 }
-@media (max-width: 991.98/1.125remem) {
+@media (max-width: 991.98px) {
   [class*=__container] {
     max-width: 46.875rem;
   }
 }
-@media (max-width: 767.98/1.125remem) {
+@media (max-width: 767.98px) {
   [class*=__container] {
     max-width: none;
   }
@@ -245,7 +245,7 @@ body {
 }
 .top-header__user::before {
   font-size: 1.75rem;
-  margin-right: 15/1.125remem;
+  margin-right: 0.9375em;
 }
 
 .menu__list {
@@ -261,7 +261,7 @@ body {
 .menu__burger {
   display: none;
 }
-@media (max-width: 767.98/1.125remem) {
+@media (max-width: 767.98) {
   .menu__burger {
     display: block;
     position: relative;
