@@ -1,4 +1,4 @@
-// Check WebP support + add class webp or no-webp
+// todo Check WebP support + add class webp or no-webp
 export function isWebp() {
     function testWebp(callback) {
         let webP = new Image();
@@ -14,6 +14,7 @@ export function isWebp() {
     });
 }
 
+// todo Spoilers with adding classes _init, _active
 export function spollers() {
     // Spollers
     const spollersArray = document.querySelectorAll('[data-spollers]');

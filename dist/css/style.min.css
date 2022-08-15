@@ -161,7 +161,6 @@ button::-moz-focus-inner {
 
 a, a:visited {
   text-decoration: none;
-  color: inherit;
 }
 
 a:hover {
@@ -249,6 +248,7 @@ body {
   align-items: center;
   line-height: 1.2222222222;
   font-weight: 600;
+  color: #fff;
 }
 .top-header__user::before {
   font-size: 1.75rem;
@@ -262,6 +262,7 @@ body {
   column-gap: calc(20px + 40 * ((100vw - 320px) / 1600));
 }
 .menu__link {
+  color: #fff;
   font-size: 1rem;
   line-height: 1.25;
 }
@@ -333,11 +334,15 @@ body {
   display: inline-flex;
   align-items: center;
   font-weight: 600;
+  color: #000;
   margin: 0 1.5625rem 0 0;
 }
 .actions-header__location::before {
   font-size: 1.5rem;
   margin: 0 0.4166666667em 0 0;
+}
+.actions-header__favourite {
+  font-size: 1.5rem;
 }
 .phones-header__item {
   display: flex;
@@ -347,6 +352,7 @@ body {
   font-weight: 600;
   line-height: 1.2222222222;
   white-space: nowrap;
+  color: #000;
 }
 .phones-header__arrow {
   color: #c93d4b;
@@ -362,12 +368,57 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
+  margin-top: 0.3125rem;
   padding: 0.9375rem;
   background-color: #fff;
   border-radius: 0.625rem;
 }
 .phones-header__list li:not(:last-child) {
   margin-bottom: 0.4444444444em;
+}
+.phones-header__callback {
+  font-weight: 700;
+  color: #c93d4b;
+  line-height: 1.2222222222;
+}
+
+.cart-header {
+  display: flex;
+  column-gap: 0.9375rem;
+  align-items: center;
+}
+.cart-header__icon {
+  flex: 0 0 2.3125rem;
+  font-size: 1.875rem;
+  position: relative;
+}
+.cart-header__icon span {
+  position: absolute;
+  top: 0;
+  right: 0.3125rem;
+  background-color: #c93d4b;
+  color: #fff;
+  border-radius: 50%;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  font-size: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-header__body {
+  flex: 0 0 auto;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+.cart-header__summ {
+  font-weight: 500;
+}
+.cart-header__summ:not(:last-child) {
+  margin-bottom: 0.3125em;
+}
+.cart-header__link {
+  color: #c93d4b;
 }
 
 .catalog-header {
