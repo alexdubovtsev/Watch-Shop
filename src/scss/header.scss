@@ -25,17 +25,14 @@
         align-items: center;
         gap: 20px;
         min-height: 50px;
- 
     }
 
     // .top-header__menu
-
     &__menu {
         flex: 1 1 auto;
     }
 
     // .top-header__user
-
     &__user {
         display: inline-flex;
         align-items: center;
@@ -52,12 +49,10 @@
 .menu {
 
     // .menu__body
-
     &__body {
     }
 
     // .menu__list
-
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -66,14 +61,12 @@
     }
 
     // .menu__link
-
     &__link {
         font-size: rem(16);
         line-height: math.div(20, 16);
     }
 
     // .menu__burger
-
 }
 
 //!===================================================
@@ -88,11 +81,11 @@
     }
 
     // .body-header__logo
-
     &__logo {
         position: relative;
-        height: rem(60);
-        width: rem(90);
+        flex: 0 1 rem(70);
+        height: rem(70);
+        //width: rem(90);
         & img {
             position: absolute;
             top: 0;
@@ -104,26 +97,25 @@
     }
 
     // .body-header__search
-
     &__search {
         flex: 1 1 auto;
         padding-right: rem(20);
-        @include adaptive-value("padding-left", 158, 20, 1)
+        @include adaptive-value("padding-left", 158, 20, 0)
     }
 
     // .body-header__actions
-
     &__actions {
     }
 }
+
 .search-header {
     max-width: rem(377);
     background-color: rgba(7, 7, 7, .03);
     border-radius: 3px;
     border: 1px solid rgba(4, 4, 4, .5);
     position: relative;
-    // .search-header__button
 
+    // .search-header__button
     &__button {
         background-color: transparent;
         position: absolute;
@@ -138,7 +130,6 @@
     }
 
     // .search-header__input
-
     &__input {
         width: 100%;
         background-color: transparent;
@@ -156,6 +147,7 @@
     display: flex;
     align-items: center;
     column-gap: 30px;
+
     // .actions-header__location
     &__location {
         display: inline-flex;
@@ -166,40 +158,33 @@
             font-size: rem(24);
             margin: 0 em(10,24) 0 0;
         }
-
     }
 
     // .actions-header__phones
-
     &__phones {
     }
 
     // .actions-header__favourite
-
     &__favourite {
     }
 
     // .actions-header__cart
-
     &__cart {
     }
 }
 .phones-header {
 
     // .phones-header__items
-
     &__items {
     }
 
     // .phones-header__item
-
     &__item {
         display: flex;
         position: relative;
     }
 
     // .phones-header__phone
-
     &__phone {
         font-weight: 600;
         line-height: math.div(22, 18);
@@ -207,22 +192,18 @@
     }
 
     // .phones-header__arrow
-
     &__arrow {
         color: #c93d4b;
         font-size: rem(20);
         margin-left: em(10, 20);
         transition: transform 0.3s ease 0s;
-        &._spoller-active {
+        &._active {
             transform: rotate(-180deg);
         }
     }
 
     // .phones-header__list
-
     &__list {
-        display: none;
-
         position: absolute;
         top: 100%;
         left: 0;

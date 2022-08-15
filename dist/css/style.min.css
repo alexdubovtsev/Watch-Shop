@@ -277,8 +277,8 @@ body {
 }
 .body-header__logo {
   position: relative;
-  height: 3.75rem;
-  width: 5.625rem;
+  flex: 0 1 4.375rem;
+  height: 4.375rem;
 }
 .body-header__logo img {
   position: absolute;
@@ -291,12 +291,7 @@ body {
 .body-header__search {
   flex: 1 1 auto;
   padding-right: 1.25rem;
-  padding-left: 158px;
-}
-@media (max-width: 1200px) {
-  .body-header__search {
-    padding-left: calc(20px + 138 * ((100vw - 320px) / 880));
-  }
+  padding-left: calc(20px + 138 * ((100vw - 320px) / 1600));
 }
 .search-header {
   max-width: 23.5625rem;
@@ -359,11 +354,10 @@ body {
   margin-left: 0.5em;
   transition: transform 0.3s ease 0s;
 }
-.phones-header__arrow._spoller-active {
+.phones-header__arrow._active {
   transform: rotate(-180deg);
 }
 .phones-header__list {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;

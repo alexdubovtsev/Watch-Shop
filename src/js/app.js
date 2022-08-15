@@ -10,7 +10,7 @@ functions.isWebp();
 
 // functions.menuInit();  
 
-// functions.spollers();
+functions.spollers();
 
 // functions.showMore();
 
