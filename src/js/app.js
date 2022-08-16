@@ -16,7 +16,7 @@ functions.spollers();
 
 // functions.tabs();
 
-// functions.initPopups(false);
+functions.popups();
 
 
 // todo Forms

@@ -196,3 +196,131 @@ export function spollers() {
     }
 }
 
+// todo Popups with adding classes _popup-active, _active
+export function popups() {
+    const popupLinks = document.querySelectorAll('.popup-link');
+    const body = document.querySelector('body');
+    const lockPadding = document.querySelectorAll('.lock-padding');
+
+    let unlock = true;
+
+    const timeout = 400;
+
+    if (popupLinks) {
+        for (let index = 0; index < popupLinks.length; index++) {
+            const popupLink = popupLinks[index];
+            popupLink.addEventListener("click", function (e) {
+                const popupName = popupLink.getAttribute('href').replace('#', '');
+                
+                const curentPopup = document.getElementById(popupName);
+                popupOpen(curentPopup);
+                e.preventDefault;
+            });
+        }
+
+    }
+
+    const popupCloseIcon = document.querySelectorAll(".close-popup");
+    if (popupCloseIcon) {
+        for (let index = 0; index < popupCloseIcon.length; index++) {
+            const el = popupCloseIcon[index];
+            el.addEventListener("click", function (e) {
+                popupClose(el.closest('.popup'));
+                e.preventDefault();
+            });
+        }
+    }
+
+    function popupOpen (curentPopup) {
+        if (curentPopup && unlock) {
+            const popupActive = document.querySelector('.popup._popup-active');
+            if (popupActive) {
+                popupClose(popupActive, false);
+            } else {
+                bodylock();
+            }
+            curentPopup.classList.add("_popup-active");
+            curentPopup.addEventListener("click", function (e) {
+                if (!e.target.closest(".popup__content")) {
+                    popupClose(e.target.closest(".popup"));
+                }
+            });
+        }
+    }
+
+    function popupClose (popupActive, doUnlock = true) {
+        if (unlock) {
+            popupActive.classList.remove("_popup-active");
+            if (doUnlock) {
+                bodyUnLock();
+            }
+        }
+    }
+
+    function bodylock() {
+        const lockPaddingValue = window.innerWidth - document.querySelector(".wrapper").offsetWidth + 'px';
+        
+        if (lockPadding) {
+            for (let index = 0; index < lockPadding.length; index++) {
+                const el = lockPadding[index];
+                el.style.paddingRight = lockPaddingValue;
+            }
+        }
+        body.style.paddingRight = lockPaddingValue;
+        body.classList.add('_lock');
+
+        unlock = false;
+        setTimeout(function () {
+            unlock = true;
+        }, timeout);
+    }
+
+    function bodyUnLock() {
+        setTimeout(function () {
+            if (lockPadding) {
+                for (let index = 0; index < lockPadding.length; index++) {
+                    const el = lockPadding[index];
+                    el.style.paddingRight = '0px';
+                }
+            }
+            body.style.paddingRight = '0px';
+            body.classList.remove('_lock');
+        }, timeout);
+
+        unlock = false;
+        setTimeout(function () {
+            unlock = true;
+        }, timeout);
+    }
+
+    document.addEventListener("keydown", function (e) {
+        if (e.key === 'Escape') {
+            const popupActive = document.querySelector('.popup._popup-active');
+            popupClose(popupActive);
+        }
+    });
+
+
+    (function () {
+        //Check support
+        if (!Element.prototype.closest) {
+            Element.prototype.closest = function (css) {
+                var node = this;
+                while (node) {
+                    if (node.matches(css)) return node;
+                    else node = node.parentElement;
+                }
+                return null;
+            };
+        }
+    })();
+    (function () {
+        //Check support
+        if (!Element.prototype.matches) {
+            Element.prototype.matches = Element.prototype.matchesSelector ||
+                Element.prototype.webkitMatchesSelector ||
+                Element.prototype.mozMatchesSelector ||
+                Element.prototype.msMatchesSelector;
+        };
+    })();
+}

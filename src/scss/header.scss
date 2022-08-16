@@ -1,4 +1,5 @@
 
+
 .header {
 
     // .header__top
@@ -167,6 +168,7 @@
     // .actions-header__favourite
     &__favourite {
         font-size: rem(24);
+        color: $mainColor;
     }
 
     // .actions-header__cart
@@ -213,9 +215,10 @@
         margin-top: rem(5);
         padding: rem(15);
         background-color: #fff;
-        border-radius: rem(10);
+        border-radius: rem(3);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         & li {
-            &:not(:last-child) {margin-bottom: em(8, 18);}
+            &:not(:last-child) {margin-bottom: em(5, 18);}
         }
     }
 
@@ -299,6 +302,7 @@
     // .catalog-header__link
 
     &__link {
+        color: #fff;
     }
 }
 
