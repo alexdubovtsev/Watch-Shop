@@ -36,7 +36,31 @@ functions.popups();
 // forms.formSelect();
 
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+// todo Slider (Swiper)
 
-const swiper = new Swiper();
+// import * as sliders from "./modules/sliders.js"; 
+
+
+// todo Scroll
+
+// import * as sliders from "./modules/scroll.js"; 
+
+// scroll.pageNav();
+
+// scroll.headerScroll(); // Add class to Header while scrolling
+
+// scroll.stickyBlock(); 
+
+
+// todo Gallery (lightgalleryjs.com)
+
+// import "./modules/gallery.js"; 
+
+
+// todo My code
+
+import "./modules/script.js"; 
+
+
+
 

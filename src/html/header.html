@@ -75,10 +75,10 @@
             <nav class="catalog-header__menu menu-catalog">
                 <ul class="menu-catalog__list">
                     <li>
-                        <a data-goto="" href="#" class="menu-catalog__link">Каталог часов</a>
+                        <button data-parent="1" data-goto=""  class="menu-catalog__link">Каталог часов</button>
                     </li>
                     <li>
-                        <a data-goto="" href="#" class="menu-catalog__link">Часы ЛЮКС</a>
+                        <button data-parent="2" data-goto="" class="menu-catalog__link">Часы ЛЮКС</button>
                     </li>
                     <li>
                         <a data-goto="" href="#" class="menu-catalog__link">Аксессуары</a>
@@ -92,7 +92,7 @@
                 </ul>
                <div class="menu-catalog__sub-menu sub-menu-catalog">
                 <div class="sub-menu-catalog__container">
-                    <div class="sub-menu-catalog__block">
+                    <div hidden data-submenu="1" class="sub-menu-catalog__block">
                         <div class="sub-menu-catalog__column">
                             <a href="#" class="sub-menu-catalog__title">Категория часов</a>
                             <ul class="sub-menu-catalog__list">
@@ -223,6 +223,119 @@
                             </ul>
                             <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
                         </div>
+                    </div>
+
+
+                    <div hidden data-submenu="2"  class="sub-menu-catalog__block">
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Категория часов</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Классические часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Электронные часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Повседневные часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Дизайнерские часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Спортивные часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Смарт часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Военные часы</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Страна производства</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Швейцария</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Германия</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Япония</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">США</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Россия</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Италия</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Материал корпуса</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Золото</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Серебро</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Кварц</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Титан</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Керамика</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Ценовой диапазон</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Casio</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Citizen</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Continental</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Ingersoll</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Orient</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Perrelet</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Rodania</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Seiko</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Tissot</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
                     </div>
                 </div>
                </div>

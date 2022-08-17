@@ -384,6 +384,7 @@
         text-align: center;
         position: relative;
         color: #fff;
+        font-size: rem(18);
         transition: color 0.3s ease 0s;
         &::after {
             content: "";
@@ -406,13 +407,19 @@
                 }
             }
         }
+        ._sub-menu-active {
+            color: $color-red;
+            &::after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
         
         
     }
 
     // .menu-catalog__sub-menu
     &__sub-menu {
-        position: absolute;
         width: 100%;
         top: 100%;
         left: 0;
@@ -420,7 +427,6 @@
     }
 }
 .sub-menu-catalog {
-    padding-bottom: rem(30);
     // .sub-menu-catalog__container
     &__container {
 
@@ -428,26 +434,33 @@
     // .sub-menu-catalog__block
     &__block {
         padding: 0 rem(10);
-        display: flex;
-        justify-content: space-between;
+        display: none;
+        &._sub-menu-open {
+            display: flex;
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
     // .sub-menu-catalog__column
     &__column {
-        flex: 1 1 auto;
+        flex: 0 1 rem(320);
         display: flex;
         flex-direction: column;
-        gap: rem(30);
     }
 
     // .sub-menu-catalog__title
     &__title {
+        flex: 0 1 rem(100);
+        align-self: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #fff;
         font-size: rem(16);
         line-height: math.div(20, 16);
         font-weight: 700;
-        padding: rem(30) 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        padding: rem(30) rem(15);
         @media (any-hover: hover) {
             &:hover {
                 text-decoration: underline;
@@ -461,8 +474,9 @@
         display: flex;
         flex-direction: column;
         gap: rem(20);
-        padding-bottom: rem(30);
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        padding: rem(30) rem(15);
+        border-top: 1px solid $color-silver;
+        border-bottom: 1px solid $color-silver;
     }
     
     // .sub-menu-catalog__item
@@ -483,9 +497,11 @@
 
     // .sub-menu-catalog__view-all
     &__view-all {
+        align-self: flex-start;
         font-size: rem(16);
         color: $color-red;
         font-weight: 600;
+        padding: rem(30) rem(15) 0;
         @media (any-hover: hover) {
             &:hover {
                 text-decoration: underline;
@@ -494,4 +510,6 @@
     }
 }
 
+
+//!===================================================
 
