@@ -5,7 +5,6 @@ function documentActions(e) {
     if (targetElement.closest('[data-parent]')) {
         const submenuId = targetElement.dataset.parent ? targetElement.dataset.parent : null;
         const submenu = document.querySelector(`[data-submenu="${submenuId}"]`);
-        const catalogMenu = document.querySelector('.catalog-header');
         if (submenu) {
             const activeLink = document.querySelector('._sub-menu-active');
             const activeBlock = document.querySelector('._sub-menu-open');

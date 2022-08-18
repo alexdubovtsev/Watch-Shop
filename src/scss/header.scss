@@ -247,6 +247,8 @@
 
     // .phones-header__items
     &__items {
+        position: relative;
+        z-index: 5;
     }
 
     // .phones-header__item
@@ -407,7 +409,7 @@
                 }
             }
         }
-        ._sub-menu-active {
+        &._sub-menu-active {
             color: $color-red;
             &::after {
                 opacity: 1;
@@ -429,7 +431,7 @@
 .sub-menu-catalog {
     // .sub-menu-catalog__container
     &__container {
-
+        padding: 0;
     }
     // .sub-menu-catalog__block
     &__block {
@@ -437,8 +439,6 @@
         display: none;
         &._sub-menu-open {
             display: flex;
-            opacity: 1;
-            visibility: visible;
         }
     }
 
@@ -485,6 +485,9 @@
 
     // .sub-menu-catalog__link
     &__link {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        align-items: center;
         color: #fff;
         font-size: rem(16);
         line-height: math.div(20, 16);

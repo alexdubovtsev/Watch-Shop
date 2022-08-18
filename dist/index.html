@@ -94,23 +94,24 @@
             <nav class="catalog-header__menu menu-catalog">
                 <ul class="menu-catalog__list">
                     <li>
-                        <button data-parent="1" data-goto=""  class="menu-catalog__link">Каталог часов</button>
+                        <button data-parent="1"  class="menu-catalog__link">Каталог часов</button>
                     </li>
                     <li>
-                        <button data-parent="2" data-goto="" class="menu-catalog__link">Часы ЛЮКС</button>
+                        <button data-parent="2" class="menu-catalog__link">Часы ЛЮКС</button>
                     </li>
                     <li>
-                        <a data-goto="" href="#" class="menu-catalog__link">Аксессуары</a>
+                        <button data-parent="3" class="menu-catalog__link">Шкаткулки для часов</button>
                     </li>
                     <li>
-                        <a data-goto="" href="#" class="menu-catalog__link">Шкаткулки для часов</a>
+                        <button data-parent="4" class="menu-catalog__link">Аксессуары</button>
                     </li>
                     <li>
-                        <a data-goto="" href="#" class="menu-catalog__link">Подарки</a>
+                        <button data-parent="5" class="menu-catalog__link">Подарки</button>
                     </li>
                 </ul>
                <div class="menu-catalog__sub-menu sub-menu-catalog">
                 <div class="sub-menu-catalog__container">
+
                     <div hidden data-submenu="1" class="sub-menu-catalog__block">
                         <div class="sub-menu-catalog__column">
                             <a href="#" class="sub-menu-catalog__title">Категория часов</a>
@@ -322,39 +323,307 @@
                         </div>
 
                         <div class="sub-menu-catalog__column">
-                            <a href="#" class="sub-menu-catalog__title">Ценовой диапазон</a>
-                            <ul class="sub-menu-catalog__list">
+                            <a href="#" class="sub-menu-catalog__title">Бренды</a>
+                            <ul class="sub-menu-catalog__list row">
                                 <li class="sub-menu-catalog__item">
-                                    <a href="#" class="sub-menu-catalog__link">Casio</a>
+                                    <a href="#" class="sub-menu-catalog__link">Armand Nicolet</a>
                                 </li>
                                 <li class="sub-menu-catalog__item">
-                                    <a href="#" class="sub-menu-catalog__link">Citizen</a>
+                                    <a href="#" class="sub-menu-catalog__link">Armin Strom</a>
                                 </li>
                                 <li class="sub-menu-catalog__item">
-                                    <a href="#" class="sub-menu-catalog__link">Continental</a>
+                                    <a href="#" class="sub-menu-catalog__link">BALL</a>
                                 </li>
                                 <li class="sub-menu-catalog__item">
-                                    <a href="#" class="sub-menu-catalog__link">Ingersoll</a>
+                                    <a href="#" class="sub-menu-catalog__link">Corum</a>
                                 </li>
                                 <li class="sub-menu-catalog__item">
-                                    <a href="#" class="sub-menu-catalog__link">Orient</a>
+                                    <a href="#" class="sub-menu-catalog__link">Cuervo y Sobrinos</a>
                                 </li>
                                 <li class="sub-menu-catalog__item">
-                                    <a href="#" class="sub-menu-catalog__link">Perrelet</a>
+                                    <a href="#" class="sub-menu-catalog__link">CVSTOS</a>
                                 </li>
                                 <li class="sub-menu-catalog__item">
-                                    <a href="#" class="sub-menu-catalog__link">Rodania</a>
+                                    <a href="#" class="sub-menu-catalog__link">Graham</a>
                                 </li>
                                 <li class="sub-menu-catalog__item">
-                                    <a href="#" class="sub-menu-catalog__link">Seiko</a>
-                                </li>
-                                <li class="sub-menu-catalog__item">
-                                    <a href="#" class="sub-menu-catalog__link">Tissot</a>
+                                    <a href="#" class="sub-menu-catalog__link">Gucci </a>
                                 </li>
                             </ul>
                             <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
                         </div>
 
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Ценовой диапазон</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">50.000 - 100.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">100.000 - 200.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">200.000 - 500.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">500.000 - 1.000.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">1.000.000 - 2.000.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">2.000.000 - 4.000.000 ₽</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                    </div>
+
+
+                    <div hidden data-submenu="3"  class="sub-menu-catalog__block">
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Тип шкатулки</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">С автоподзаводом</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для подзавода 1-2 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для подзавода 3-4 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для подзавода 5-8 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для хранения</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для хранения 1-2 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для хранения 3-4 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для хранения 5-8 часов</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Вид шкатулки</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Подставка</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Роллы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Футляр</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">С выдвижными отделами</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">С вынимающимися отделами</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Шкатулка-комод</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Шкатулка-трансформер</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Материал</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Металл</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Дерево</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Карбон</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Кожа</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Пластик</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Ткань</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Бренды</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">AllBox</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Altitude</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Avante</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Boda Concept</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Friedrich|23</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">LC Designs Co. Ltd</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+                    </div>
+
+                    
+                    <div hidden data-submenu="4"  class="sub-menu-catalog__block">
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Ручки</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Перьевые</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Шариковые</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Роллеры</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Стержни капиллярные</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Механические карандаши</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+                        
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Кожаные изделия</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Сумки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Барсетки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Бумажники и портмоне</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Клатчи</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Портфели</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Косметички</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Папки для документов</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Другое</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Брелоки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Браслеты</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Зажигалки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Зажимы для денег</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Зажимы для галстуков</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Запонки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Чехлы для телефона</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Блокноты</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Популярные бренды</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Parker</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Piquadro</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Tateossian</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">TOUS</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Zippo</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+                    </div>
+
+
+                    <div hidden data-submenu="5"  class="sub-menu-catalog__block">
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Подарочные сертификаты</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На Новый год</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На 14 февраля</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На 23 февраля</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На День рождения</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На свадьбу</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На юбилей</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
                     </div>
                 </div>
                </div>
