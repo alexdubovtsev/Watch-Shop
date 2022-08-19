@@ -15,7 +15,7 @@
 }
 
 //to EM
-@function em($px, $baseFontSize) {
+@function em($px, $baseFontSize : 16) {
 	@if unitless($px) {
 		$px: $px * 1px;
 	}

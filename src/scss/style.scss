@@ -24,7 +24,9 @@ $color-silver: rgba(192, 192, 192, 0.849);
 
 $minWidth: 320;
 $maxWidth: 1920;
-$maxWidthContainer: calc(1170 + 30);
+$maxWidthContainer: 1170;
+$containerPadding: 30;
+$containerWidth: $maxWidthContainer + $containerPadding;
 
 $pc: $maxWidthContainer;
 $tablet: 991.98;

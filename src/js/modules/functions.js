@@ -14,6 +14,19 @@ export function isWebp() {
     });
 }
 
+// todo Burger with adding classes _init, _active
+export function burger() {
+    const iconMenu = document.querySelector('.top-header-burger__icon');
+    const iconBody = document.querySelector('.top-header-burger__body');
+    if (iconMenu) {
+        iconMenu.addEventListener("click", function(e) {
+            document.body.classList.toggle('_lock');
+            iconMenu.classList.toggle('_active');
+            iconBody.classList.toggle('_active');
+        });
+    }
+}
+
 // todo Spoilers with adding classes _init, _active
 export function spollers() {
     // Spollers

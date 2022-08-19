@@ -8,7 +8,7 @@ functions.isWebp();
 
 // functions.addLoadedClass();
 
-// functions.menuInit();  
+functions.burger();  
 
 functions.spollers();
 
@@ -17,6 +17,9 @@ functions.spollers();
 // functions.tabs();
 
 functions.popups();
+
+// Dynamic adaptive
+import "./modules/adaptive.js"; 
 
 
 // todo Forms
