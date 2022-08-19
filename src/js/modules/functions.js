@@ -23,6 +23,9 @@ export function burger() {
             document.body.classList.toggle('_lock');
             iconMenu.classList.toggle('_active');
             iconBody.classList.toggle('_active');
+            if (document.documentElement.classList.contains('_catalog-active')) {
+                document.documentElement.classList.remove("_catalog-active");
+            }
         });
     }
 }
