@@ -24,4 +24,12 @@ function documentActions(e) {
         document.documentElement.classList.toggle('_catalog-active');
         e.preventDefault();
     }
+    if (targetElement.closest('.menu-catalog__btn')) {
+        document.documentElement.classList.remove('_catalog-active');
+
+        document.querySelector('._sub-menu-active') ? document.querySelector('._sub-menu-active').classList.remove('_sub-menu-active') : null;
+        document.querySelector('._sub-menu-open') ? document.querySelector('._sub-menu-open').classList.remove('_sub-menu-open') : null;
+
+        e.preventDefault();
+    }
 }
