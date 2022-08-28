@@ -14,6 +14,8 @@ export function isWebp() {
     });
 }
 
+export let isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
+
 // todo Burger with adding classes _init, _active
 export function burger() {
     const iconMenu = document.querySelector('.top-header-burger__icon');
@@ -25,6 +27,9 @@ export function burger() {
             iconBody.classList.toggle('_active');
             if (document.documentElement.classList.contains('_catalog-active')) {
                 document.documentElement.classList.remove("_catalog-active");
+            }
+            if (document.documentElement.classList.contains('_sub-menu-active')) {
+                document.documentElement.classList.remove("_sub-menu-active");
             }
         });
     }
