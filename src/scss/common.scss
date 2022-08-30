@@ -1,5 +1,5 @@
 // todo Forms elements
-// @import "base/common/forms";
+@import "base/common/forms/forms";
 
 // todo Popups
 @import "base/common/popup";
@@ -22,17 +22,17 @@
 // todo Sticky block styles
 // @import "base/common/sticky";
 
-// todo IBG images
-[class*="-ibg"] {
-    position: relative;
-    // overflow: hidden;
-    // padding: 0 0 math.div( , ) 0;
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-}
+// // todo IBG images
+// [class*="_ibg"] {
+//     position: relative;
+//     // overflow: hidden;
+//     // padding: 0 0 math.div( , ) 0;
+//     img {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         height: 100%;
+//         width: 100%;
+//         object-fit: cover;
+//     }
+// }
