@@ -41,7 +41,7 @@ import "./modules/adaptive.js";
 
 // todo Slider (Swiper)
 
-// import * as sliders from "./modules/sliders.js"; 
+import "./modules/sliders.js"; 
 
 
 // todo Scroll
