@@ -14,25 +14,24 @@
         max-width: rem(750);
         position: relative;
         z-index: 2;
+        &:not(:last-child) {margin-bottom: rem(50);}
     }
 
     // .main-block__slider
     &__slider {
-        margin: 0 rem(-20);
+        margin: 0 rem(-30);
+        padding: 0 rem(30);
     }
 
-    // .main-block__wrapper
-    &__wrapper {
+    // .main-block__swiper
+    &__swiper {
+        &:not(:last-child) {margin-bottom: rem(30);}
     }
 
     // .main-block__slide
     &__slide {
     }
 
-    // .main-block__media
-    &__media {
-
-    }
 
     // .main-block__bg
     &__bg {
@@ -46,6 +45,9 @@
         }
     }
 
+    // .main-block__controll
+    &__controll {
+    }
 
     // .main-block__advantages
     &__advantages {
@@ -90,6 +92,82 @@
     &__btn {
     }
 }
+
+.controll-main-block {
+    display: flex;
+    align-items: center;
+    gap: rem(30);
+    // .controll-main-block__dotts
+    &__dotts {
+        display: flex;
+        gap: rem(20);
+        .swiper-pagination-bullet {
+            cursor: pointer;
+            height: rem(30);
+            width: rem(20);
+            position: relative;
+            transition: all 0.3s ease 0s;
+            &::after{
+                content:'';
+                position: absolute;
+                height: rem(3);
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #fff;
+                transition: all 0.3s ease 0s;
+            }
+            &::before{
+                content:'';
+                position: absolute;  
+                z-index: 2;
+                top: 50%;
+                left: 0;
+                height: rem(10);
+                width: rem(2);
+                transform: translateY(-50%);
+                background-color: #fff;
+                box-shadow: 0 0 rem(20) rem(3) rgba(248, 30, 30, 0.9);
+                opacity: 0;
+            }
+        }
+        .swiper-pagination-bullet-active {
+            width: rem(35);
+            &::after{
+                background-color: $color-red;
+            }
+            &::before{
+                left: rem(33);
+                opacity: 1;
+                transition: left 3s linear 0s;
+            }
+        } 
+    }
+
+    // .controll-main-block__fraction
+    &__fraction {
+    }
+}
+.fraction-controll {
+    display: flex;
+    color: #fff;
+    align-items: flex-end;
+    font-weight: 600;
+    letter-spacing: .2em;
+
+    // .fraction-controll__current
+    &__current {
+        font-size: rem(24);
+        color: $color-red;
+    }
+
+    // .fraction-controll__all
+    &__all {
+        font-size: rem(18);
+    }
+}
+
+
 
 .advantages-main {
 

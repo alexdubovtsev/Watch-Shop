@@ -1,18 +1,10 @@
-/*
-Документация по работе в шаблоне: 
-Документация слайдера: https://swiperjs.com/
-Сниппет(HTML): swiper
-*/
+/* Документация слайдера: https://swiperjs.com/ */
 
 // Подключаем слайдер Swiper из node_modules
-// При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
-// Пример: { Navigation, Autoplay }
-import Swiper, { Navigation, Pagination } from 'swiper';
-/*
-Основниые модули слайдера:
+import Swiper, { Navigation, Pagination, Parallax, Autoplay } from 'swiper';
+/* Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
 EffectFade, Lazy, Manipulation
-Подробнее смотри https://swiperjs.com/
 */
 
 // Стили Swiper
@@ -23,7 +15,6 @@ EffectFade, Lazy, Manipulation
 // Полный набор стилей из node_modules
 // import 'swiper/css';
 
-// Добавление классов слайдерам
 // swiper главному блоку, swiper-wrapper оболочке, swiper-slide для слайдов
 function bildSliders() {
 	//BildSlider
@@ -49,30 +40,32 @@ function initSliders() {
 		new Swiper('.main-block__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			//modules: [Navigation, Pagination],
-			/*
-			effect: 'fade',
+			modules: [Navigation, Pagination, Parallax, Autoplay],
+
+			// effect: 'fade',
+
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+			
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
-			spaceBetween: 20,
+			spaceBetween: 50,
 			autoHeight: true,
 			speed: 800,
+			parallax: true,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			loop: true,
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
-			//pagination: {
-			//	el: '.slider-quality__pagging',
-			//	clickable: true,
-			//},
+			pagination: {
+				el: '.controll-main-block__dotts',
+				clickable: true,
+			},
 			
 			/*
 			breakpoints: {
@@ -96,7 +89,15 @@ function initSliders() {
 			},
 			*/
 			on: {
-
+				init: function (swiper) {
+					const allSlides = document.querySelector('.fraction-controll__all');
+					const allSlidesItems = document.querySelectorAll('.slide-main-block:not(.swiper-slide-duplicate)');
+					allSlides.innerHTML = allSlidesItems.length;
+				},
+				slideChange: function (swiper) {
+					const currentSlide = document.querySelector('.fraction-controll__current');
+					currentSlide.innerHTML = swiper.realIndex + 1 < 10 ? `0${swiper.realIndex + 1}` : swiper.realIndex + 1;
+				}
 			}
 		});
 	}
