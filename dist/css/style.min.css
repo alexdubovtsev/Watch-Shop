@@ -1039,8 +1039,15 @@ body {
   position: relative;
   z-index: 2;
 }
-.main-block__body:not(:last-child) {
-  margin-bottom: 3.125rem;
+@supports (margin-bottom: clamp( 2.1875rem , 1.8465909091rem  +  1.7045454545vw , 3.125rem )) {
+  .main-block__body:not(:last-child) {
+    margin-bottom: clamp( 2.1875rem , 1.8465909091rem  +  1.7045454545vw , 3.125rem );
+  }
+}
+@supports not (margin-bottom: clamp( 2.1875rem , 1.8465909091rem  +  1.7045454545vw , 3.125rem )) {
+  .main-block__body:not(:last-child) {
+    margin-bottom: calc(2.1875rem + 0.9375 * (100vw - 20rem) / 55);
+  }
 }
 .main-block__slider {
   margin: 0 -1.875rem;
@@ -1066,7 +1073,11 @@ body {
 
 .slide-main-block__content {
   color: #fff;
-  padding-right: 2.5rem;
+}
+@media (min-width: 991.98px) {
+  .slide-main-block__content {
+    padding-right: 2.5rem;
+  }
 }
 @supports (margin-bottom: clamp( 1.875rem , 1.1931818182rem  +  3.4090909091vw , 3.75rem )) {
   .slide-main-block__content:not(:last-child) {
@@ -1079,25 +1090,58 @@ body {
   }
 }
 .slide-main-block__title {
-  font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2777777778;
+}
+@supports (font-size: clamp( 1.5rem , 1.1428571429rem  +  1.7857142857vw , 2.25rem )) {
+  .slide-main-block__title {
+    font-size: clamp( 1.5rem , 1.1428571429rem  +  1.7857142857vw , 2.25rem );
+  }
+}
+@supports not (font-size: clamp( 1.5rem , 1.1428571429rem  +  1.7857142857vw , 2.25rem )) {
+  .slide-main-block__title {
+    font-size: calc(1.5rem + 0.75 * (100vw - 20rem) / 42);
+  }
 }
 .slide-main-block__title:not(:last-child) {
   margin-bottom: 0.4166666667em;
 }
 .slide-main-block__subtitle {
-  font-size: 1.875rem;
   line-height: 1.5333333333;
+}
+@supports (font-size: clamp( 1.375rem , 1.1369047619rem  +  1.1904761905vw , 1.875rem )) {
+  .slide-main-block__subtitle {
+    font-size: clamp( 1.375rem , 1.1369047619rem  +  1.1904761905vw , 1.875rem );
+  }
+}
+@supports not (font-size: clamp( 1.375rem , 1.1369047619rem  +  1.1904761905vw , 1.875rem )) {
+  .slide-main-block__subtitle {
+    font-size: calc(1.375rem + 0.5 * (100vw - 20rem) / 42);
+  }
 }
 .slide-main-block__subtitle:not(:last-child) {
   margin-bottom: 1em;
 }
 .slide-main-block__text {
-  font-size: 1.25rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
 }
+@supports (font-size: clamp( 1rem , 0.880952381rem  +  0.5952380952vw , 1.25rem )) {
+  .slide-main-block__text {
+    font-size: clamp( 1rem , 0.880952381rem  +  0.5952380952vw , 1.25rem );
+  }
+}
+@supports not (font-size: clamp( 1rem , 0.880952381rem  +  0.5952380952vw , 1.25rem )) {
+  .slide-main-block__text {
+    font-size: calc(1rem + 0.25 * (100vw - 20rem) / 42);
+  }
+}
+@media (max-width: 479.98px) {
+  .slide-main-block__btn {
+    width: 100%;
+  }
+}
+
 .controll-main-block {
   display: flex;
   align-items: center;
@@ -1163,12 +1207,62 @@ body {
   font-size: 1.125rem;
 }
 
+.advantages-main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-flow: row;
+  gap: 1.25rem;
+  max-width: 46.875rem;
+}
+@media (max-width: 479.98px) {
+  .advantages-main {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    row-gap: 1.875rem;
+  }
+}
+.advantages-main__item {
+  display: grid;
+  text-align: center;
+  max-width: 21.875rem;
+}
+@supports (gap: clamp( 0.625rem , 0.4761904762rem  +  0.744047619vw , 0.9375rem )) {
+  .advantages-main__item {
+    gap: clamp( 0.625rem , 0.4761904762rem  +  0.744047619vw , 0.9375rem );
+  }
+}
+@supports not (gap: clamp( 0.625rem , 0.4761904762rem  +  0.744047619vw , 0.9375rem )) {
+  .advantages-main__item {
+    gap: calc(0.625rem + 0.3125 * (100vw - 20rem) / 42);
+  }
+}
+@media (max-width: 479.98px) {
+  .advantages-main__item {
+    max-width: 17.5rem;
+  }
+}
+.advantages-main__icon img {
+  transform: scale(1.5);
+}
 .advantages-main__text {
   color: #fff;
+  line-height: 1.6;
+  font-weight: 600;
+}
+@supports (font-size: clamp( 1rem , 0.880952381rem  +  0.5952380952vw , 1.25rem )) {
+  .advantages-main__text {
+    font-size: clamp( 1rem , 0.880952381rem  +  0.5952380952vw , 1.25rem );
+  }
+}
+@supports not (font-size: clamp( 1rem , 0.880952381rem  +  0.5952380952vw , 1.25rem )) {
+  .advantages-main__text {
+    font-size: calc(1rem + 0.25 * (100vw - 20rem) / 42);
+  }
 }
 
 .btn {
-  display: inline-flex;
+  display: inline-block;
+  text-align: center;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.6;
