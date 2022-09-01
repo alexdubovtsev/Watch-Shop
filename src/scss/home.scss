@@ -213,4 +213,105 @@
 
 // ! CARDS ----------------------------------------------------
 
+.catalog-cards {
+    @include adaptive-value("padding-top", 100, 30);
+    @include adaptive-value("padding-bottom", 70, 30);
+    // .catalog-cards__container
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmmax(rem(280), 1fr));
+    }
+
+    // .catalog-cards__item
+    &__item {
+    }
+}
+.item-catalog-cards {
+    box-shadow: 0 rem(4) rem(20) rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: rem(30);
+    min-height: rem(290);
+
+    // .item-catalog-cards__body
+    &__body {
+        position: relative;
+        z-index: 2;
+    }
+
+    // .item-catalog-cards__title
+    &__title { 
+        font-weight: 600;
+        display: inline-block;
+        @include adaptive-value("font-size", 24, 16, 992, 320, 1);
+        line-height: math.div(34 , 24);
+        &:not(:last-child) {margin-bottom: em(20, 24);}
+        padding: rem(5) 0;
+        position: relative;
+        &::after{
+            content:'';
+            position: absolute;
+            width: 0%;
+            height: rem(2);
+            bottom: -10%;
+            left: 0;
+            background-color: $color-red;
+            transition: width 0.5s cubic-bezier(1.000, -0.500, 0.400, 1.650) 0s;
+        }
+        @media (any-hover: hover){
+            &:hover{
+                &::after{width: 100%;}
+            }
+        }
+    }
+
+    // item-catalog-cards__link-title
+    &__link-title{
+        color: $mainColor;
+    }
+
+    // .item-catalog-cards__list
+    &__list li {
+        position: relative;
+        padding: 0 0 0 rem(20);
+        &::after{
+            content:'';
+            position: absolute;
+            width: rem(5);
+            height: rem(5);
+            top: 50%;
+            left: 0;
+            background-color: $color-red;
+            transform: translate(0%, -50%);
+            border-radius: 50%;
+        }
+    }
+
+    // .item-catalog-cards__link
+    &__link {
+        line-height: math.div(34 , 18);
+        @media (any-hover: hover){
+            &:hover{
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+
+    // .item-catalog-cards__bg
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        & img {
+            object-position: center;
+
+        }
+    }
+
+
+}
+
 

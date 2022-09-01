@@ -89,13 +89,17 @@ body {
 .page {
 
     // .page__home
-
     &__home {
     }
 
     // .page__main-block
-
     &__main-block {
         position: relative;
     }
+
+    
+    // .page__catalog-cards
+    &__catalog-cards {
+    }
 }
+
