@@ -14,7 +14,9 @@
         display: block;
     }
 }
-
+.__icon-catalog:before {
+  content: "\e914";
+}
 .__icon-arrow-down:before {
   content: "\e912";
 }
