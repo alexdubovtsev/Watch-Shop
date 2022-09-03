@@ -102,75 +102,24 @@ function initSliders() {
 		});
 	};
 
-	// if (document.querySelector('.products-slider__slider')) {
-	// 	new Swiper('.products-slider__slider', {
-	// 		// Подключаем модули слайдера
-	// 		// для конкретного случая
-	// 		modules: [Navigation, Pagination, Autoplay],
-
-	// 		// effect: 'fade',
-
-	// 		autoplay: {
-	// 			delay: 3500,
-	// 			disableOnInteraction: false,
-	// 		},
-			
-	// 		observer: true,
-	// 		observeParents: true,
-	// 		slidesPerView: 3,
-	// 		spaceBetween: 30,
-	// 		autoHeight: true,
-	// 		speed: 800,
-	// 		//touchRatio: 0,
-	// 		//simulateTouch: false,
-	// 		loop: true,
-	// 		//preloadImages: false,
-	// 		//lazy: true,
-	// 		// Dotts
-	// 		pagination: {
-	// 			el: '.products-slider__dotts',
-	// 			clickable: true,
-	// 		},
-			
-	// 		/*
-	// 		breakpoints: {
-	// 			320: {
-	// 				slidesPerView: 1,
-	// 				spaceBetween: 0,
-	// 				autoHeight: true,
-	// 			},
-	// 			768: {
-	// 				slidesPerView: 2,
-	// 				spaceBetween: 20,
-	// 			},
-	// 			992: {
-	// 				slidesPerView: 3,
-	// 				spaceBetween: 20,
-	// 			},
-	// 			1268: {
-	// 				slidesPerView: 4,
-	// 				spaceBetween: 30,
-	// 			},
-	// 		},
-	// 		*/
-	// 		on: {
-	// 		}
-	// 	});
-	// }
-
 	if (document.querySelector('.products-slider__slider')) {
 		new Swiper('.products-slider__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Pagination, Parallax],
+			modules: [Navigation, Pagination, Autoplay],
 
 			// effect: 'fade',
 	
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
+
 			observer: true,
 			observeParents: true,
 			watchOverflow: true,
 			slidesPerView: 4,
-			spaceBetween: 40,
+			spaceBetween: 30,
 			autoHeight: true,
 			speed: 800,
 			parallax: true,
@@ -185,30 +134,33 @@ function initSliders() {
 				clickable: true,
 			},
 			
-			/*
 			breakpoints: {
+				// when window width is >= 320px
 				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
+				  slidesPerView: 1,
+				  spaceBetween: 20,
+				  autoHeight: true,
 				},
+				// when window width is >= 768px
 				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
+				  slidesPerView: 2,
+				  spaceBetween: 30
 				},
+				// when window width is >= 992px
 				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
+				  slidesPerView: 3,
+				  spaceBetween: 40,
 				},
-				1268: {
+				1370: {
 					slidesPerView: 4,
-					spaceBetween: 30,
+					spaceBetween: 40,
 				},
 			},
-			*/
+
+	
 			on: {
 				init: function(swiper) {
-					
+
 				}
 			}
 		});

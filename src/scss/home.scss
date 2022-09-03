@@ -358,6 +358,9 @@
     }
 }
 
-// ! CARDS ----------------------------------------------------
+// ! HIT PRODUCTS -----------------------------------------------
 
-
+.hit-products {
+    @include adaptive-value("padding-top", 50, 40);
+    @include adaptive-value("padding-bottom", 120, 40);
+}

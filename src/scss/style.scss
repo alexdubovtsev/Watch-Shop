@@ -20,6 +20,7 @@ $mainColor: #000;
 $color-black: #141414;
 $color-red: #c45959;
 $color-silver: rgba(192, 192, 192, 0.849);
+$color-grey: rgba(0, 0, 0, 0.7);
 
 
 $minWidth: 320;
@@ -103,8 +104,8 @@ body {
     &__catalog-cards {
     }
 
-    // .page__products-slider
-    &__products-slider {
+    // .page__hit-products
+    &__hit-products {
     }
 }
 

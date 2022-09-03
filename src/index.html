@@ -5,12 +5,14 @@
     <div class="wrapper">
         @@include('html/header.html', {})
         <main class="page page__home">
+
           <section class="page__main-block main-block">
             <div class="main-block__container">
 
               <div class="main-block__body">
                 <div class="main-block__slider">
                   <div class="main-block__swiper">
+
                     <div class="main-block__slide slide-main-block">
                       <div class="slide-main-block__content">
                         <h2 data-swiper-parallax="-100" class="slide-main-block__title">Интернет магазин часов</h2>
@@ -200,7 +202,14 @@
             </div>
             
           </section>
-          @@include('html/product-slider.html', { "title": "Лидеры продаж" })
+
+          <section class="page__hit-products hit-products">
+            @@include('html/product-slider.html', {
+              "title": "Лидеры продаж",
+              "moretext": "Перейти в каталог",
+             })
+          </section>
+
           
         </main>
         @@include('html/footer.html', {})
