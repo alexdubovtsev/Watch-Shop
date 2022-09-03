@@ -132,6 +132,8 @@ function initSliders() {
 			pagination: {
 				el: '.products-slider__dotts',
 				clickable: true,
+				dynamicBullets: true,
+
 			},
 			
 			breakpoints: {
