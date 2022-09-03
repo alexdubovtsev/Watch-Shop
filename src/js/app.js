@@ -34,7 +34,7 @@ import "./modules/adaptive.js";
 
 // forms.formViewPassword(); 
 
-// forms.formRating();
+forms.formRating();
 
 // forms.formSelect();
 

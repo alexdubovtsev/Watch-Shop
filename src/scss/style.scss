@@ -81,6 +81,8 @@ body {
 @import "header"; 
 @import "footer";
 
+@import "product-slider";
+
 @import "home";
 
 @import "common";
@@ -96,10 +98,13 @@ body {
     &__main-block {
         position: relative;
     }
-
     
     // .page__catalog-cards
     &__catalog-cards {
+    }
+
+    // .page__products-slider
+    &__products-slider {
     }
 }
 
