@@ -272,7 +272,7 @@
     &__title { 
         font-weight: 600;
         display: inline-block;
-        @include adaptive-value("font-size", 24, 16, 992, 320, 1);
+        @include adaptive-value("font-size", 24, 18, 992, 320, 1);
         line-height: math.div(34 , 24);
         &:not(:last-child) {margin-bottom: em(20, 24);}
         padding: rem(5) 0;

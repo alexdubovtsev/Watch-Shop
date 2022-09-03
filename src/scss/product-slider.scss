@@ -63,7 +63,6 @@
 
     }
 
-
     // .products-slider__slider
     &__slider {
         padding: rem(25) rem(15);
@@ -203,6 +202,7 @@
 
     // .product-card__materials
     &__materials {
+        @include adaptive-value("font-size", 18, 15, 992, 320, 1);
         color: $color-grey;
         line-height: math.div(25 , 18);
         min-height: rem(50);
@@ -232,7 +232,7 @@
         align-items: center;
 
         font-weight: 600;
-        font-size: rem(24);
+        @include adaptive-value("font-size", 24, 20, 992, 320, 1);
         line-height: math.div(34 , 20);
         &::before{
             order: 2;     
@@ -276,6 +276,7 @@
             display: inline-flex;
             align-items: center;
             flex-direction: row-reverse;
+            @include adaptive-value("font-size", 20, 16, 992, 320, 1);
             &::before{
                 font-size: rem(20);
                 margin-left: rem(5);
