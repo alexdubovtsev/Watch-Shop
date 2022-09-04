@@ -1,37 +1,116 @@
 .products-new {
     //background: url("../img/mainpage/product-new/bg.jpg") 10% 0% / cover no-repeat;
-    background-color: $color-black;
+    background-color: #090909;
     @include adaptive-value("padding-top", 55, 20);
     @include adaptive-value("padding-bottom", 55, 20);
+    position: relative;
+
+    @media (any-hover: hover){
+        &:hover{
+            .products-new__title {
+                &::after{width: 100%;}
+            }
+        }
+    }
     // .products-new__container
     &__container {
         display: grid;
-        grid-template-columns: prc(400, $maxWidthContainer) 1fr;
+        grid-template-columns: prc(420, $maxWidthContainer) 1fr;
     }
 
     // .products-new__body
     &__body {
+        padding-right: rem(30);
     }
 
     // .products-new__title
     &__title {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        font-weight: 700;
+        font-size: rem(30);
+        line-height: math.div(46 , 30);
+        display: inline-block;
+        &:not(:last-child) {margin-bottom: rem(30);}
+        &::after{
+            content:'';
+            position: absolute;
+            width: 0%;
+            height: rem(2);
+            bottom: -10%;
+            left: 0;
+            background-color: $color-red;
+            transition: width 0.45s cubic-bezier(1.000, -0.500, 0.400, 1.650) 0s;
+        }
+    }
+
+    // .products-new__text
+    &__text {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        font-weight: 500;
+        line-height: math.div(26 , 18);
+        letter-spacing: .03em;
+        &:not(:last-child) {
+            @include adaptive-value("margin-bottom", 60, 20);
+        }
     }
 
     // .products-new__more
     &__more {
+        position: relative;
+        z-index: 2;
+        color: $color-red;
+        font-weight: 600;
+        line-height: math.div(28 , 18);
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: rem(3);
+        transition: all 0.3s ease 0s;
+        &::before{
+            font-size: rem(18);
+            //color: #fff;
+            transition: all 0.3s ease 0s;
+         }
+        @media (any-hover: hover){
+            &:hover{
+                &::before {
+                    transform: translateX(rem(2));
+                    color: $color-red;
+                }
+            }
+        }
     }
 
     // .products-new__bg
     &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(5px);
+        img {
+            object-position: 0% 100%; 	
+
+        }
     }
 
     // .products-new__slider
     &__slider {
+        position: relative;
+        z-index: 2;
         min-width: 0; 
+        //display: none;
+        padding: rem(50) 0 0 0;
     }
 
     // .products-new__swiper
     &__swiper {
+        &:not(:last-child) {@include adaptive-value("margin-bottom", 40, 25);}
     }
 
     // .products-new__slide
@@ -40,6 +119,55 @@
 
     // .products-new__dotts
     &__dotts {
+        transform: translate(0px, 10%);
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        //gap: rem(20);
+        margin: 0 auto;
+        overflow: hidden;
+        .swiper-pagination-bullet {
+            margin: 0 rem(10);
+            cursor: pointer;
+            height: rem(30);
+            width: rem(20);
+            position: relative;
+            transition: all 0.3s ease 0s;
+            &::after{
+                content:'';
+                position: absolute;
+                height: rem(3);
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #fff;
+                transition: all 0.3s ease 0s;
+            }
+            &::before{
+                content:'';
+                position: absolute;  
+                z-index: 2;
+                top: 50%;
+                left: 0;
+                height: rem(10);
+                width: rem(2);
+                transform: translateY(-50%);
+                background-color: $color-red;
+                box-shadow: 0 0 rem(20) rem(3) rgba(248, 30, 30, 0.4);
+                opacity: 0;
+            }
+        }
+        .swiper-pagination-bullet-active {
+            width: rem(35);
+            &::after{
+                background-color: $color-red;
+            }
+            &::before{
+                left: rem(35);
+                opacity: 1;
+                transition: left 4s linear 0s;
+            }
+        }
     }
 }
 

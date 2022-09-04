@@ -62,5 +62,6 @@
 }
 .rating__info {
 	color: $color-grey;
+	white-space: nowrap;
 	@include adaptive-value("font-size", 16, 14, 992, 320, 1);
 }
