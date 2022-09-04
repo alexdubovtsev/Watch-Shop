@@ -25,7 +25,7 @@ $color-grey: rgba(0, 0, 0, 0.7);
 
 $minWidth: 320;
 $maxWidth: 1920;
-$maxWidthContainer: 1270;
+$maxWidthContainer: 1370;
 $containerPadding: 30;
 $containerWidth: $maxWidthContainer + $containerPadding;
 
@@ -83,6 +83,7 @@ body {
 @import "footer";
 
 @import "product-slider";
+@import "product-new";
 
 @import "home";
 

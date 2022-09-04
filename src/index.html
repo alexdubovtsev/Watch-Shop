@@ -123,6 +123,7 @@
                     <li class="item-catalog-cards__link">Золотые</li>
                     <li class="item-catalog-cards__link">Серебряные</li>
                     <li class="item-catalog-cards__link">Титановые</li>
+                    <li class="item-catalog-cards__link">Керамические</li>
                   </ul>
                 </div>
 
@@ -154,9 +155,11 @@
                     <a href="" class="item-catalog-cards__link-title">Популярные бренды</a>
                   </h3>
                   <ul class="item-catalog-cards__list">
-                    <li class="item-catalog-cards__link">Классические часы</li>
-                    <li class="item-catalog-cards__link">Повседневные часы</li>
-                    <li class="item-catalog-cards__link">Дизанерские часы</li>
+                    <li class="item-catalog-cards__link">Casio</li>
+                    <li class="item-catalog-cards__link">Continental</li>
+                    <li class="item-catalog-cards__link">Orient</li>
+                    <li class="item-catalog-cards__link">Seiko</li>
+                    <li class="item-catalog-cards__link">Tissot</li>
                   </ul>
                 </div>
 
@@ -189,6 +192,7 @@
                   <ul class="item-catalog-cards__list">
                     <li class="item-catalog-cards__link">Кожаные изделия</li>
                     <li class="item-catalog-cards__link">Ручки</li>
+                    <li class="item-catalog-cards__link">Блокноты</li>
                     <li class="item-catalog-cards__link">Другое</li>
                   </ul>
                 </div>
@@ -209,6 +213,12 @@
              })
           </section>
 
+          <section class="page__new-products new-products">
+            @@include('html/product-new.htm', {
+              "title": "Новинки",
+              "moretext": "Перейти в каталог",
+             })
+          </section>
           
         </main>
         @@include('html/footer.html', {})

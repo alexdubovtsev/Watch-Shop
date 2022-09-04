@@ -1,0 +1,47 @@
+.products-new {
+    //background: url("../img/mainpage/product-new/bg.jpg") 10% 0% / cover no-repeat;
+    background-color: $color-black;
+    @include adaptive-value("padding-top", 55, 20);
+    @include adaptive-value("padding-bottom", 55, 20);
+    // .products-new__container
+    &__container {
+        display: grid;
+        grid-template-columns: prc(400, $maxWidthContainer) 1fr;
+    }
+
+    // .products-new__body
+    &__body {
+    }
+
+    // .products-new__title
+    &__title {
+    }
+
+    // .products-new__more
+    &__more {
+    }
+
+    // .products-new__bg
+    &__bg {
+    }
+
+    // .products-new__slider
+    &__slider {
+        min-width: 0; 
+    }
+
+    // .products-new__swiper
+    &__swiper {
+    }
+
+    // .products-new__slide
+    &__slide {
+    }
+
+    // .products-new__dotts
+    &__dotts {
+    }
+}
+
+
+
