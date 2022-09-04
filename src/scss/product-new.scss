@@ -15,7 +15,13 @@
     // .products-new__container
     &__container {
         display: grid;
-        grid-template-columns: prc(420, $maxWidthContainer) 1fr;
+        @media (min-width: #{$mobile + px}){
+            grid-template-columns: prc(650, $maxWidthContainer) 1fr;
+        }
+        @media (min-width: #{$tablet + px}){
+            grid-template-columns: prc(430, $maxWidthContainer) 1fr;
+        }
+
     }
 
     // .products-new__body
@@ -92,10 +98,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        filter: blur(5px);
+        filter: blur(6px);
         img {
             object-position: 0% 100%; 	
-
         }
     }
 
@@ -165,7 +170,7 @@
             &::before{
                 left: rem(35);
                 opacity: 1;
-                transition: left 4s linear 0s;
+                transition: left 8s linear 0s;
             }
         }
     }

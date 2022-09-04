@@ -227,12 +227,22 @@
 
     // .catalog-cards__item
     &__item {
-        &:nth-child(1) {order: 1;}
-        &:nth-child(2) {order: 4;}
-        &:nth-child(3) {order: 5;}
-        &:nth-child(4) {order: 2;}
-        &:nth-child(5) {order: 3;}
-        &:nth-child(6) {order: 6;}
+        @media (min-width: #{$tablet + px}){
+            &:nth-child(1) {order: 1;}
+            &:nth-child(2) {order: 4;}
+            &:nth-child(3) {order: 5;}
+            &:nth-child(4) {order: 2;}
+            &:nth-child(5) {order: 3;}
+            &:nth-child(6) {order: 6;}
+        }
+        @media (min-width: #{$maxWidthContainer + px}){
+            &:nth-child(1) {order: 1;}
+            &:nth-child(2) {order: 2;}
+            &:nth-child(3) {order: 3;}
+            &:nth-child(4) {order: 4;}
+            &:nth-child(5) {order: 5;}
+            &:nth-child(6) {order: 6;}
+        }
         @media (max-width: #{$tablet + px}){
             &:nth-child(1) {order: 1;}
             &:nth-child(2) {order: 3;}

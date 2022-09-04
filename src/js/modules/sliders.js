@@ -140,7 +140,7 @@ function initSliders() {
 				// when window width is >= 320px
 				320: {
 				  slidesPerView: 1,
-				  spaceBetween: 20,
+				  spaceBetween: 0,
 				  autoHeight: true,
 				},
 				// when window width is >= 768px
@@ -177,7 +177,7 @@ function initSliders() {
 			// effect: 'fade',
 	
 			autoplay: {
-				delay: 4000,
+				delay: 8000,
 				disableOnInteraction: false,
 			},
 
@@ -217,7 +217,7 @@ function initSliders() {
 				// when window width is >= 992px
 				992: {
 				  slidesPerView: 2,
-				  spaceBetween: 40,
+				  spaceBetween: 30,
 				},
 				1370: {
 					slidesPerView: 3,
