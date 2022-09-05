@@ -371,11 +371,16 @@
 // ! HIT PRODUCTS -----------------------------------------------
 
 .hit-products {
-    @include adaptive-value("padding-top", 50, 40);
-    @include adaptive-value("padding-bottom", 70, 40);
+    @include adaptive-value("padding-top", 40, 30);
+    @include adaptive-value("padding-bottom", 60, 30);
 }
 
 .new-products {
-    @include adaptive-value("padding-top", 50, 40);
-    @include adaptive-value("padding-bottom", 70, 40);
+    @include adaptive-value("padding-top", 40, 30);
+    @include adaptive-value("padding-bottom", 60, 30);
+}
+
+.recommend-products {
+    @include adaptive-value("padding-top", 40, 30);
+    @include adaptive-value("padding-bottom", 60, 30);
 }
