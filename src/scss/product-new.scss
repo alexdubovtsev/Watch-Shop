@@ -15,6 +15,7 @@
     // .products-new__container
     &__container {
         display: grid;
+        align-items: start;
         @media (min-width: #{$mobile + px}){
             grid-template-columns: prc(650, $maxWidthContainer) 1fr;
         }
@@ -26,7 +27,10 @@
 
     // .products-new__body
     &__body {
-        padding-right: rem(30);
+        @include adaptive-value("padding-right", 40, 30, 1630, 992, 2);
+        // @media (max-width: #{$mobile + px}){
+        //     padding-right: rem(0);
+        // }
     }
 
     // .products-new__title
@@ -58,7 +62,7 @@
         color: #fff;
         font-weight: 500;
         line-height: math.div(26 , 18);
-        letter-spacing: .03em;
+        //letter-spacing: .03em;
         &:not(:last-child) {
             @include adaptive-value("margin-bottom", 60, 20);
         }

@@ -140,8 +140,8 @@ function initSliders() {
 				// when window width is >= 320px
 				320: {
 				  slidesPerView: 1,
-				  spaceBetween: 0,
-				  autoHeight: true,
+				  spaceBetween: 20,
+				  //autoHeight: true,
 				},
 				// when window width is >= 768px
 				768: {
@@ -207,7 +207,7 @@ function initSliders() {
 				320: {
 				  slidesPerView: 1,
 				  spaceBetween: 20,
-				  autoHeight: true,
+				  //autoHeight: true,
 				},
 				// when window width is >= 768px
 				768: {
