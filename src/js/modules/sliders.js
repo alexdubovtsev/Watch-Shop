@@ -233,6 +233,82 @@ function initSliders() {
 			}
 		});
 	};
+
+	if (document.querySelector('.products-recommend__slider')) {
+		new Swiper('.products-recommend__slider', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Pagination, Autoplay],
+
+			// effect: 'fade',
+	
+			autoplay: {
+				delay: 8000,
+				disableOnInteraction: false,
+			},
+
+			observer: true,
+			observeParents: true,
+			watchOverflow: true,
+			slidesPerView: 4,
+			spaceBetween: 30,
+			autoHeight: true,
+			speed: 800,
+			parallax: true,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+
+
+
+			// Dotts
+			pagination: {
+				el: '.products-recommend__dotts',
+				clickable: true,
+				dynamicBullets: true,
+
+			},
+			
+			breakpoints: {
+				// when window width is >= 320px
+				320: {
+				  slidesPerView: 1,
+				  spaceBetween: 20,
+				  //autoHeight: true,
+				},
+				// when window width is >= 768px
+				768: {
+				  slidesPerView: 2,
+				  spaceBetween: 30
+				},
+				// when window width is >= 992px
+				992: {
+				  slidesPerView: 3,
+				  spaceBetween: 40,
+				},
+				1370: {
+					slidesPerView: 4,
+					spaceBetween: 40,
+				},
+			},
+
+	
+			on: {
+				init: function(swiper) {
+
+				}
+			}
+		});
+	};
+
+
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {
