@@ -134,7 +134,7 @@
     }
 }
 
-.product-card {
+.products-recommend .product-card {
     position: relative;
     &::before{
         content: attr(data-sale);

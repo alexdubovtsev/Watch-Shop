@@ -389,8 +389,77 @@
     @include adaptive-value("padding-bottom", 55, 30);
 }
 
-// ! ARTICLE MODULE --------------------------------------------
 
+// ! BEST PRODUCTS -----------------------------------------------
+
+.product-best {
+    @include adaptive-value("padding-bottom", 55, 40);
+
+    // .product-best__container
+    &__container {
+    }
+
+    // .product-best__body
+    &__body {
+        box-shadow: 0 rem(4) rem(30) rgba(0, 0, 0, 0.25);
+        text-align: center;
+        position: relative;
+        //min-height: rem(600);
+        @include adaptive-value("min-height", 600, 300, 992, 320, 1);
+        padding: 0 rem(15);
+        @include adaptive-value("padding-top", 30, 15);
+        @include adaptive-value("padding-bottom", 35, 20);
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        &::before{
+            content:'';
+            background: url("../img/mainpage/product-best/best-1.jpg")  center / cover no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: all 0.3s ease 0s;
+        }
+        @media (any-hover: hover){
+            &:hover{
+                &::before{
+                    transform: scale(1.03);
+                    
+                }
+            }
+        }
+    }
+
+    // .product-best__title
+    &__title {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        font-weight: 700;
+        @include adaptive-value("font-size", 34, 24, 992, 320, 1);
+        line-height: math.div(46 , 30);
+        letter-spacing: 0.05em;
+        text-shadow: rem(3) rem(4) rem(12) #000;
+    }
+
+    // .product-best__text
+    &__text {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        font-weight: 600;
+        @include adaptive-value("font-size", 24, 18, 992, 320, 1);
+        line-height: math.div(34 , 24);
+        
+    }
+}
+
+
+// ! ARTICLE MODULE --------------------------------------------
 
 .articles-module {
     @include adaptive-value("padding-bottom", 55, 30);

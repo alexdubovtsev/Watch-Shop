@@ -1643,10 +1643,10 @@ body {
   transition: left 8s linear 0s;
 }
 
-.product-card {
+.products-recommend .product-card {
   position: relative;
 }
-.product-card::before {
+.products-recommend .product-card::before {
   content: attr(data-sale);
   position: absolute;
   top: 1.875rem;
@@ -1662,12 +1662,12 @@ body {
   border-radius: 50%;
 }
 @supports (font-size: clamp( 0.875rem , 0.8154761905rem  +  0.2976190476vw , 1rem )) {
-  .product-card::before {
+  .products-recommend .product-card::before {
     font-size: clamp( 0.875rem , 0.8154761905rem  +  0.2976190476vw , 1rem );
   }
 }
 @supports not (font-size: clamp( 0.875rem , 0.8154761905rem  +  0.2976190476vw , 1rem )) {
-  .product-card::before {
+  .products-recommend .product-card::before {
     font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 42);
   }
 }
@@ -2196,6 +2196,108 @@ body {
 @supports not (padding-bottom: clamp( 1.875rem , 1.412037037rem  +  2.3148148148vw , 3.4375rem )) {
   .recommend-products {
     padding-bottom: calc(1.875rem + 1.5625 * (100vw - 20rem) / 67.5);
+  }
+}
+
+@supports (padding-bottom: clamp( 2.5rem , 2.2222222222rem  +  1.3888888889vw , 3.4375rem )) {
+  .product-best {
+    padding-bottom: clamp( 2.5rem , 2.2222222222rem  +  1.3888888889vw , 3.4375rem );
+  }
+}
+@supports not (padding-bottom: clamp( 2.5rem , 2.2222222222rem  +  1.3888888889vw , 3.4375rem )) {
+  .product-best {
+    padding-bottom: calc(2.5rem + 0.9375 * (100vw - 20rem) / 67.5);
+  }
+}
+.product-best__body {
+  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: relative;
+  padding: 0 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+@supports (min-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 37.5rem )) {
+  .product-best__body {
+    min-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 37.5rem );
+  }
+}
+@supports not (min-height: clamp( 18.75rem , 9.8214285714rem  +  44.6428571429vw , 37.5rem )) {
+  .product-best__body {
+    min-height: calc(18.75rem + 18.75 * (100vw - 20rem) / 42);
+  }
+}
+@supports (padding-top: clamp( 0.9375rem , 0.6597222222rem  +  1.3888888889vw , 1.875rem )) {
+  .product-best__body {
+    padding-top: clamp( 0.9375rem , 0.6597222222rem  +  1.3888888889vw , 1.875rem );
+  }
+}
+@supports not (padding-top: clamp( 0.9375rem , 0.6597222222rem  +  1.3888888889vw , 1.875rem )) {
+  .product-best__body {
+    padding-top: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 67.5);
+  }
+}
+@supports (padding-bottom: clamp( 1.25rem , 0.9722222222rem  +  1.3888888889vw , 2.1875rem )) {
+  .product-best__body {
+    padding-bottom: clamp( 1.25rem , 0.9722222222rem  +  1.3888888889vw , 2.1875rem );
+  }
+}
+@supports not (padding-bottom: clamp( 1.25rem , 0.9722222222rem  +  1.3888888889vw , 2.1875rem )) {
+  .product-best__body {
+    padding-bottom: calc(1.25rem + 0.9375 * (100vw - 20rem) / 67.5);
+  }
+}
+.product-best__body::before {
+  content: "";
+  background: url("../img/mainpage/product-best/best-1.jpg") center/cover no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .product-best__body:hover::before {
+    transform: scale(1.03);
+  }
+}
+.product-best__title {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.5333333333;
+  letter-spacing: 0.05em;
+  text-shadow: 0.1875rem 0.25rem 0.75rem #000;
+}
+@supports (font-size: clamp( 1.5rem , 1.2023809524rem  +  1.4880952381vw , 2.125rem )) {
+  .product-best__title {
+    font-size: clamp( 1.5rem , 1.2023809524rem  +  1.4880952381vw , 2.125rem );
+  }
+}
+@supports not (font-size: clamp( 1.5rem , 1.2023809524rem  +  1.4880952381vw , 2.125rem )) {
+  .product-best__title {
+    font-size: calc(1.5rem + 0.625 * (100vw - 20rem) / 42);
+  }
+}
+.product-best__text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.4166666667;
+}
+@supports (font-size: clamp( 1.125rem , 0.9464285714rem  +  0.8928571429vw , 1.5rem )) {
+  .product-best__text {
+    font-size: clamp( 1.125rem , 0.9464285714rem  +  0.8928571429vw , 1.5rem );
+  }
+}
+@supports not (font-size: clamp( 1.125rem , 0.9464285714rem  +  0.8928571429vw , 1.5rem )) {
+  .product-best__text {
+    font-size: calc(1.125rem + 0.375 * (100vw - 20rem) / 42);
   }
 }
 
