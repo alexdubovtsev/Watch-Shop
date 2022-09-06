@@ -372,15 +372,173 @@
 
 .hit-products {
     @include adaptive-value("padding-top", 40, 30);
-    @include adaptive-value("padding-bottom", 60, 30);
+    @include adaptive-value("padding-bottom", 55, 30);
 }
+
+// ! NEW PRODUCTS -----------------------------------------------
 
 .new-products {
     @include adaptive-value("padding-top", 40, 30);
-    @include adaptive-value("padding-bottom", 60, 30);
+    @include adaptive-value("padding-bottom", 55, 30);
 }
+
+// ! RECOMMEND PRODUCTS -----------------------------------------------
 
 .recommend-products {
     @include adaptive-value("padding-top", 40, 30);
-    @include adaptive-value("padding-bottom", 60, 30);
+    @include adaptive-value("padding-bottom", 55, 30);
 }
+
+// ! ARTICLE MODULE --------------------------------------------
+
+
+.articles-module {
+    @include adaptive-value("padding-bottom", 55, 30);
+    // .articles-module__container
+    &__container {
+    }
+
+    // .articles-module__header
+    &__header {
+        &:not(:last-child) {
+            @include adaptive-value("margin-bottom", 40, 25);
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(20); 
+    }
+
+    // .articles-module__title
+    &__title {
+        font-weight: 700;
+        @include adaptive-value("font-size", 30, 22, 992, 320, 1);
+        line-height: math.div(46 , 30);
+        letter-spacing: 0.05em;
+    }
+
+    // .articles-module__more
+    &__more {
+        font-weight: 600;
+        color: $color-grey;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: em(5,18);
+        transition: all 0.3s ease 0s;
+        &::before{
+            font-size: rem(20);
+            color: $color-grey;
+            transition: all 0.3s ease 0s;
+            padding: rem(10);
+        }
+        @media (any-hover: hover){
+            &:hover{
+                color: rgba(0, 0, 0, 1);
+                &::before {
+                    transform: scale(1.15);
+                    color: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+        @media (max-width: rem(550)){
+            & span {
+                display: none;
+            }
+            &::before {
+                font-size: rem(22);
+            } 
+        }
+    }
+
+    // .articles-module__items
+    &__items {
+        display: grid;
+        gap: rem(25);
+
+        margin: rem(-20);
+        padding: rem(20);
+        @media (min-width: #{$mobileSmall + px} ){
+            grid-template-columns: repeat(auto-fit, minmax(rem(310), 1fr));
+        }
+    }
+
+    // .articles-module__item
+    &__item {
+    }
+}
+.item-article {
+    background-color: #fff;
+    display: flex;  
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 rem(4) rem(20) rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease 0s;
+
+    @media (any-hover: hover){
+        &:hover{
+            box-shadow: 0 rem(4) rem(25) rgba(0, 0, 0, 0.3);
+            .item-article__date {
+                color: rgba(0, 0, 0, 1);
+            }
+            .item-article__img img {
+                transform: scale(1.03);
+            }
+        }
+    }
+
+
+    // .item-article__img
+    &__img {
+        padding: 0 0 prc(200,400) 0;
+        overflow: hidden;
+        img {
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    // item-article__body
+    &__body {
+        padding: rem(25) rem(30);
+        flex: 1 1 auto;
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    // .item-article__date
+    &__date {
+        &:not(:last-child) {margin-bottom: rem(25);}
+        color: $color-grey;
+        line-height: math.div(24 , 18);
+        transition: all 0.3s ease 0s;
+    }
+
+    // .item-article__title
+    &__title {
+        flex: 1 1 auto;
+    }
+
+    // .item-article__link-title
+    &__link-title {
+        font-size: rem(20);
+        line-height: math.div(34 , 20);
+        font-weight: 600;
+        color: $color-grey;
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover){
+            &:hover{
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
