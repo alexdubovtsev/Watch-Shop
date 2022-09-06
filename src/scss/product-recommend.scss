@@ -133,3 +133,24 @@
         }
     }
 }
+
+.product-card {
+    position: relative;
+    &::before{
+        content: attr(data-sale);
+        position: absolute;
+        top: rem(30);
+        right: rem(30);
+        width: rem(40);
+        height: rem(40);
+        z-index: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $mainColor;
+        color: #fff;
+        border-radius: 50%;
+        @include adaptive-value("font-size", 16, 14, 992, 320, 1);
+    }
+}

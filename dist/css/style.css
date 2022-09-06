@@ -1643,6 +1643,35 @@ body {
   transition: left 8s linear 0s;
 }
 
+.product-card {
+  position: relative;
+}
+.product-card::before {
+  content: attr(data-sale);
+  position: absolute;
+  top: 1.875rem;
+  right: 1.875rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+@supports (font-size: clamp( 0.875rem , 0.8154761905rem  +  0.2976190476vw , 1rem )) {
+  .product-card::before {
+    font-size: clamp( 0.875rem , 0.8154761905rem  +  0.2976190476vw , 1rem );
+  }
+}
+@supports not (font-size: clamp( 0.875rem , 0.8154761905rem  +  0.2976190476vw , 1rem )) {
+  .product-card::before {
+    font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 42);
+  }
+}
+
 .main-block {
   background: #000;
   position: relative;
