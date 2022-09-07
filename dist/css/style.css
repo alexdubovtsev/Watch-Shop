@@ -1246,6 +1246,7 @@ body {
   flex: 1 1 auto;
   display: inline-flex;
   align-items: center;
+  position: relative;
   font-weight: 600;
   line-height: 1.7;
 }
@@ -1670,6 +1671,29 @@ body {
   .products-recommend .product-card::before {
     font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 42);
   }
+}
+
+.products-recommend .product-card__footer {
+  padding: 1.875rem 0 1.25rem;
+}
+
+.products-recommend .product-card__price-full {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -75%;
+  left: 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+.products-recommend .product-card__price-full::before {
+  content: "";
+  width: 5rem;
+  height: 0.125rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(-20deg);
 }
 
 .main-block {

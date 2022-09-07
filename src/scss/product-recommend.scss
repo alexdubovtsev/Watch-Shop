@@ -154,3 +154,27 @@
         @include adaptive-value("font-size", 16, 14, 992, 320, 1);
     }
 }
+
+.products-recommend .product-card__footer {
+    padding: rem(30) 0 rem(20);
+}
+
+.products-recommend .product-card__price-full {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -75%;
+    left: 0;
+    color: $color-grey;
+    &::before{
+        content:'';
+        width: rem(80);
+        height: rem(2);
+        background-color: $color-grey;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: rotate(-20deg);
+    }
+}
+

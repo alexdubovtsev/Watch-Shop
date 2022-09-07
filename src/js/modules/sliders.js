@@ -242,10 +242,10 @@ function initSliders() {
 
 			// effect: 'fade',
 	
-			// autoplay: {
-			// 	delay: 8000,
-			// 	disableOnInteraction: false,
-			// },
+			autoplay: {
+				delay: 8000,
+				disableOnInteraction: false,
+			},
 
 			observer: true,
 			observeParents: true,

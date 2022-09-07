@@ -232,6 +232,7 @@
         flex: 1 1 auto;
         display: inline-flex;
         align-items: center;
+        position: relative;
 
         font-weight: 600;
         @include adaptive-value("font-size", 24, 20, 992, 320, 1);
