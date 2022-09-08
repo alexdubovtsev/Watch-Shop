@@ -21,17 +21,6 @@
 	font-size: rem(18);
 	font-weight: 600;
 	line-height: math.div(22 , 18);
-	&:not(:last-child) {margin-bottom: em(30, 18);}
-	@media (min-width: #{$tablet + px} ){
-		& {
-			display: inline-block;
-		}
-	}
-	@media (max-width: #{$tablet + px} ){
-		& {
-			width: 100%;
-		}
-	}
 	@media (any-hover: hover){
 		&:hover{
 			color: $color-red;
@@ -39,6 +28,7 @@
 	}
 	._init & {
 		cursor: pointer;
+		width: 100%;
 		&::before {
 			content: "\e912";
 			@extend %ic;
@@ -59,5 +49,10 @@
 }
 // Контент спойлера
 .spoller-item-footer__body {
+	@include adaptive-value("padding-top", 30, 15);
+	@include adaptive-value("padding-bottom", 30, 15);
+}
 
+.spoller-item-footer__guarantee {
+	color: #fff;
 }

@@ -12,12 +12,13 @@
     @include adaptive-value("padding-top", 80, 30);
     @include adaptive-value("padding-bottom", 55, 30);
     display: grid;
-    gap: rem(30);
+    @include adaptive-value("gap", 45, 20);
     // .body-footer__row
     &__row {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
-        @include adaptive-value("gap", 40, 20);
+        column-gap: rem(40);
+        @include adaptive-value("row-gap", 30, 20);
         &:not(:last-child) {
             padding-bottom: rem(30);
             border-bottom: 1px solid $color-silver;
