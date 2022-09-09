@@ -24,11 +24,11 @@ import "./modules/adaptive.js";
 
 // todo Forms
 
-// import * as forms from "./modules/forms.js"; 
+import * as forms from "./modules/forms.js"; 
 
-// forms.formFieldsInit(); // Add classes, placeholder
+forms.formFieldsInit(); // Add classes, placeholder
 
-// forms.formSubmit(true); // Validation (false - off)
+forms.formSubmit(true); // Validation (false - off)
 
 // forms.formMasks(); 
 

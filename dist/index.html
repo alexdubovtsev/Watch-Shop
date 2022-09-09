@@ -643,7 +643,7 @@
 </header>
 
         <!-- style="display: none;"  -->
-        <main  class="page page__home">
+        <main style="display: none;" class="page page__home">
 
           <section class="page__main-block main-block">
             <div class="main-block__container">
@@ -2225,7 +2225,7 @@
                                             <div data-spollers class="footer-location__items">
                                                 <div class="footer-location__item">
                                                     <a href="#" class="footer-location__title __icon-footer-location">Москва</a>
-                                                    <button type="button" data-spoller class="footer-location__icon"></button>
+                                                    <button type="button" data-spoller class="footer-location__arrow __icon-arrow-down"></button>
                                                     <ul class="footer-location__list">
                                                         <li class="footer-location__li">
                                                             <div class="footer-location__city">Санкт-Петербург</div>
@@ -2285,13 +2285,22 @@
                                         <li class="footer-menu__item">
                                             <a href="mailto:info@timeless.ru" class="footer-menu__link __icon-footer-mail">info@timeless.ru</a>
                                         </li>
-                                        <li class="footer-menu__item">
-                                            <ul class="footer-menu__socials">
-
-                                            </ul>
-                                        </li>
                                     </ul>
                                 </nav>
+                                <ul class="footer-socials">
+                                    <li class="footer-socials__li">
+                                        <a href="#" class="footer-socials__link __icon-inst"></a>
+                                    </li>
+                                    <li class="footer-socials__li">
+                                        <a href="#" class="footer-socials__link __icon-tg"></a>
+                                    </li>
+                                    <li class="footer-socials__li">
+                                        <a href="#" class="footer-socials__link __icon-whatsapp"></a>
+                                    </li>
+                                    <li class="footer-socials__li">
+                                        <a href="#" class="footer-socials__link __icon-fb"></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -2329,7 +2338,7 @@
                             <button type="button" data-spoller class="spoller-item-footer__title">Гарантия</button>
                             <div class="spoller-item-footer__body">
                                 <div class="spoller-item-footer__guarantee">
-                                    Недовольны своей покупкой? Вы можете вернуть ее в течении 30 дней с даты получения, согласно нашим правилам.
+                                    Недовольны своей покупкой? Вы можете вернуть ее в течении 30 дней с даты получения, согласно <a href="#">нашим правилам</a>.
                                 </div>
                             </div>
                         </div>
@@ -2340,16 +2349,26 @@
                     <div data-spollers="767.98" class="item-footer_spoller spoller-item-footer">
                         <div class="spoller-item-footer__item">
                             <button type="button" data-spoller class="spoller-item-footer__title">Новостная рассылка</button>
-                            <div class="spoller-item-footer__body">
-
-                            </div>
+                            <form action="#" class="spoller-item-footer__body footer-subscribe">
+                                <label for="subscribe-input" class="footer-subscribe__label">Подписаться сейчас</label>
+                                <div class="footer-subscribe__line">
+                                    <input id="subscribe-input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required="email" placeholder="Введите свой email" class="footer-subscribe__input">
+                                    <button type="submit" class="footer-subscribe__button __icon-arrow-right"></button>
+                                </div>
+                                <div class="footer-subscribe__policy">Подписываясь на рассылку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</div>
+                            </form>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <br><br> <br><br><br><br><br><br><br><br>
+            <div class="body-footer__last">
+               <div class="body-footer__rules">
+                Все права защищены. Информация на сайте не является публичной офертой. Статус наличия и цена изделий на сайте и в розничных салонах могут не совпадать. Стоимость товара, указанная в интернет-магазине, действительная в магазинах Timeless.ru только в случае оформления резерва через сайт.
+               </div> 
+               <div class="body-footer__copy">Магазин часов <span>Timeless.ru 2022 ©</span></div>
+            </div>
         </div>
     </div>
 </footer>

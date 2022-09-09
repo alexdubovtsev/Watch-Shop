@@ -1,10 +1,10 @@
 
 // Подключение списка активных модулей
-import { flsModules } from "../modules.js";
+//import { flsModules } from "../modules.js";
 // Вспомогательные функции
-import { isMobile, _slideUp, _slideDown, _slideToggle, FLS } from "../functions.js";
+import { isMobile, _slideUp, _slideDown, _slideToggle } from "./functions.js";
 // Модуль прокрутки к блоку
-import { gotoBlock } from "../scroll/gotoblock.js";
+//import { gotoBlock } from "../scroll/gotoblock.js";
 //================================================================================================================================================================================================================================================================================================================================
 
 /*
