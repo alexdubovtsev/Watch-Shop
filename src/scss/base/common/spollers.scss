@@ -49,8 +49,6 @@
 }
 // Контент спойлера
 .spoller-item-footer__body {
-	@include adaptive-value("padding-top", 30, 15);
-	@include adaptive-value("padding-bottom", 30, 15);
 }
 
 .spoller-item-footer__guarantee {
