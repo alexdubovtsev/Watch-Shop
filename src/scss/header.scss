@@ -49,9 +49,13 @@
         gap: em(15, 18);
         &::before {
             font-size: rem(28);
+            transition: all 0.3s ease 0s;
         }
         @media (any-hover: hover) {
             &:hover {
+                &::before{
+                    color: $color-red;
+                }
                 span {
                     text-decoration: underline;
                 }
@@ -129,7 +133,8 @@
             left: -100%;
             overflow: auto;
             background: $color-black;
-            padding: rem(100) rem(15) rem(50) rem(15);
+            padding: rem(80) rem(15) rem(50) rem(15);
+            @include adaptive-value("padding-top", 110, 80, 992, 320, 1);
             z-index: 4;
             transition: left 0.3s ease 0s;
             &::before {
@@ -506,7 +511,7 @@
         position: relative;
         color: #fff;
         font-size: rem(18);
-        line-height: math.div(25, 16);
+        line-height: math.div(25, 18);
         transition: color 0.3s ease 0s;
         @media (min-width: #{$tablet + px}) {
             padding: 0 rem(10);
@@ -650,7 +655,8 @@
         justify-content: center;
         align-items: center;
         color: #fff;
-        line-height: math.div(20, 16);
+        font-size: rem(18);
+        line-height: math.div(25, 18);
         //font-size: rem(16);
         @include adaptive-value("font-size", 25, 20, 992, 320);
         @media (any-hover: hover) {
@@ -663,7 +669,9 @@
             padding: rem(15);
         }
         @media (max-width: #{$tablet + px}){
-            flex: 0 1 rem(60);
+            //flex: 0 1 rem(45);
+            flex: 0 1 auto;
+            &:not(:last-child) {margin-bottom: rem(25);}
         }
     }
 

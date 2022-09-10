@@ -282,8 +282,12 @@ body {
 }
 .top-header__user::before {
   font-size: 1.75rem;
+  transition: all 0.3s ease 0s;
 }
 @media (any-hover: hover) {
+  .top-header__user:hover::before {
+    color: #d36969;
+  }
   .top-header__user:hover span {
     text-decoration: underline;
   }
@@ -369,9 +373,19 @@ body {
     left: -100%;
     overflow: auto;
     background: #141414;
-    padding: 6.25rem 0.9375rem 3.125rem 0.9375rem;
+    padding: 5rem 0.9375rem 3.125rem 0.9375rem;
     z-index: 4;
     transition: left 0.3s ease 0s;
+  }
+  @supports (padding-top: clamp( 5rem , 4.1071428571rem  +  4.4642857143vw , 6.875rem )) {
+    .top-header-burger__body {
+      padding-top: clamp( 5rem , 4.1071428571rem  +  4.4642857143vw , 6.875rem );
+    }
+  }
+  @supports not (padding-top: clamp( 5rem , 4.1071428571rem  +  4.4642857143vw , 6.875rem )) {
+    .top-header-burger__body {
+      padding-top: calc(5rem + 1.875 * (100vw - 20rem) / 42);
+    }
   }
   .top-header-burger__body::before {
     content: "";
@@ -775,7 +789,7 @@ body {
   position: relative;
   color: #fff;
   font-size: 1.125rem;
-  line-height: 1.5625;
+  line-height: 1.3888888889;
   transition: color 0.3s ease 0s;
 }
 @media (min-width: 991.98px) {
@@ -940,7 +954,8 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
-  line-height: 1.25;
+  font-size: 1.125rem;
+  line-height: 1.3888888889;
 }
 @supports (font-size: clamp( 1.25rem , 1.1011904762rem  +  0.744047619vw , 1.5625rem )) {
   .sub-menu-catalog__title {
@@ -970,7 +985,10 @@ body {
 }
 @media (max-width: 991.98px) {
   .sub-menu-catalog__title {
-    flex: 0 1 3.75rem;
+    flex: 0 1 auto;
+  }
+  .sub-menu-catalog__title:not(:last-child) {
+    margin-bottom: 1.5625rem;
   }
 }
 .sub-menu-catalog__list {
@@ -1270,7 +1288,7 @@ body {
   position: relative;
 }
 .footer-subscribe__line:not(:last-child) {
-  margin-bottom: 0.5555555556em;
+  margin-bottom: 1.3888888889em;
 }
 .footer-subscribe__line .form__error {
   position: absolute;
@@ -1306,6 +1324,11 @@ body {
 }
 .footer-subscribe__policy a {
   color: #d36969;
+}
+@media (any-hover: hover) {
+  .footer-subscribe__policy a:hover {
+    text-decoration: underline;
+  }
 }
 
 .products-slider__header {
@@ -2864,6 +2887,7 @@ body {
 
 .popup {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;

@@ -258,7 +258,7 @@
     &__line {
         display: flex;
         position: relative;
-        &:not(:last-child) {margin-bottom: em(10, 18);}
+        &:not(:last-child) {margin-bottom: em(25, 18);}
         .form__error {
             position: absolute;
             bottom: rem(-16);
@@ -299,6 +299,11 @@
         line-height: math.div(20 , 15);
         a {
             color: $color-red;
+            @media (any-hover: hover){
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
