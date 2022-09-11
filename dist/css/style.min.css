@@ -196,9 +196,8 @@ body {
   font-weight: 500;
   color: #000;
 }
-.lock body {
+body._lock {
   overflow: hidden;
-  touch-action: none;
 }
 
 .wrapper {
