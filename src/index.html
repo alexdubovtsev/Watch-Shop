@@ -1,314 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
-  @@include('html/head.html', { "title": "Home" })
-  <body>
-    <div class="wrapper">
-        @@include('html/header.html', {})
-        <!-- style="display: none;"  -->
-        <main  class="page page__home">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Верстка «NEW_PROJECT_NAME»</title>
+	</head>
+	<body>
+		<div class="rootpage">
+			<h1>«NEW_PROJECT_NAME»</h1>
+			<div class="rootpage__info">
+				Описание проекта
+			</div>
+			<h2>Готовые страницы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Главная</a></li>
+                <li><a target="_blank" href="catalog.html#">Каталог</a></li>
+			</ol>
+			<h2>Попапы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html#"></a></li>
+			</ol>
+			<div class="rootpage__thx">
+				<h2>Спасибо за заказ!</h2>
+				<p>Буду рад хорошему отзыву!</p>
+				<p>Обращайтесь еще!</p>
+			</div>
+			<div class="rootpage__contacts">
+				<h2>Мои контакты:</h2>
+				<p>Почта: <a href="mailto:alexdubovtsev.it@gmail.com">alexdubovtsev.it@gmail.com</a></p>
+				<p>VK: <a target="_blank" href="https://vk.com/id160722833">https://vk.com/id160722833</a></p>
+			</div>
+		</div>
+	</body>
 
-          <section class="page__main-block main-block">
-            <div class="main-block__container">
+	<select name="form[]" data-class-modif="form">
+		<option value="1" selected>Пункт №1</option>
+		<option value="2">Пункт №2</option>
+		<option value="3">Пункт №3</option>
+		<option value="4">Пункт №4</option>
+	</select>
+	<style>
+		@charset "UTF-8";
+		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,700&display=swap");
+		* ,*::before, *::after {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box; 
+		}
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			min-width: 320px;
+			width: 100%;
+			color: #fff;
+			background-color: #212121;
+			/* <!--background-color: #161b40;--> */
+		}
+		body {
+			font-family: Montserrat;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 1.2rem;
+		}
+		a {
+			text-decoration: underline;
+			color: #fff;
+			font-weight: 500;
+		}
+		a:visited {
+			text-decoration: underline;
+			color: #fff;
+		}
+			a:hover {
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		img {
+			vertical-align: top;
+		}
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+		.rootpage{
+			padding: 50px 35px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		@media (max-width: 767px) {
+			.rootpage{
+				padding:30px 15px;
+			}
+		}
+		h1 {
+			color: #43bee5;
+			text-shadow: 2px 2px 66px #43bee5;
+			font-size: 2.5rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+		@media (max-width: 767px) {
+			h1 {
+				font-size: 1.85rem;
+				margin: 0px 0px 1.25rem 0px;
+			}
+		}
+		h2 {
+			color: #c93d4b;
+			text-shadow: 0px 0px 5px rgba(#c93d4b, 0.5), 2px 2px 36px #c93d4b;
+			font-size: 1.25rem;
+			margin: 0px 0px 1rem 0px;
+		}
+		@media (max-width: 767px) {
+			 h2 {
+				font-size: 1.125rem;
+				margin: 0px 0px 1rem 0px;
+			}
+		}
+		.rootpage__info{
+			line-height: 140%;
+			margin: 0px 0px 1.5rem 0px;
+		}
 
-              <div class="main-block__body">
-                <div class="main-block__slider">
-                  <div class="main-block__swiper">
-
-                    <div class="main-block__slide slide-main-block">
-                      <div class="slide-main-block__content">
-                        <h2 data-swiper-parallax="-100" class="slide-main-block__title">Интернет магазин часов</h2>
-                        <div data-swiper-parallax="-150" class="slide-main-block__subtitle">Всегда вовремя. Всегда рядом.</div>
-                        <div data-swiper-parallax="-200" class="slide-main-block__text">Добро пожаловать на официальный сайт Timeless! Надежные часы в широком ассортименте, оригинальные аксессуары и кожаные изделия - все это можно найти здесь и создать свой неповторимый стиль. Также наш интернет-магазин предоставляет своим покупателям гарантию на наручные часы и качественное сервисное обслуживание.</div>
-                      </div>
-                      <a data-swiper-parallax="-300" href="#" class="slide-main-block__btn btn">Подробнее</a>
-                    </div>
-
-                    <div class="main-block__slide slide-main-block">
-                      <div class="slide-main-block__content">
-                        <h2 data-swiper-parallax="-100" class="slide-main-block__title">Интернет магазин часов</h2>
-                        <div data-swiper-parallax="-150" class="slide-main-block__subtitle">Всегда вовремя. Всегда рядом.</div>
-                        <div data-swiper-parallax="-200" class="slide-main-block__text">Добро пожаловать на официальный сайт Timeless! Надежные часы в широком ассортименте, оригинальные аксессуары и кожаные изделия - все это можно найти здесь и создать свой неповторимый стиль. Также наш интернет-магазин предоставляет своим покупателям гарантию на наручные часы и качественное сервисное обслуживание.</div>
-                      </div>
-                      <a data-swiper-parallax="-300" href="#" class="slide-main-block__btn btn">Подробнее</a>
-                    </div>
-
-                    <div class="main-block__slide slide-main-block">
-                      <div class="slide-main-block__content">
-                        <h2 data-swiper-parallax="-100" class="slide-main-block__title">Интернет магазин часов</h2>
-                        <div data-swiper-parallax="-150" class="slide-main-block__subtitle">Всегда вовремя. Всегда рядом.</div>
-                        <div data-swiper-parallax="-200" class="slide-main-block__text">Добро пожаловать на официальный сайт Timeless! Надежные часы в широком ассортименте, оригинальные аксессуары и кожаные изделия - все это можно найти здесь и создать свой неповторимый стиль. Также наш интернет-магазин предоставляет своим покупателям гарантию на наручные часы и качественное сервисное обслуживание.</div>
-                      </div>
-                      <a data-swiper-parallax="-300" href="#" class="slide-main-block__btn btn">Подробнее</a>
-                    </div>
-
-                    <div class="main-block__slide slide-main-block">
-                      <div class="slide-main-block__content">
-                        <h2 data-swiper-parallax="-100" class="slide-main-block__title">Интернет магазин часов</h2>
-                        <div data-swiper-parallax="-150" class="slide-main-block__subtitle">Всегда вовремя. Всегда рядом.</div>
-                        <div data-swiper-parallax="-200" class="slide-main-block__text">Добро пожаловать на официальный сайт Timeless! Надежные часы в широком ассортименте, оригинальные аксессуары и кожаные изделия - все это можно найти здесь и создать свой неповторимый стиль. Также наш интернет-магазин предоставляет своим покупателям гарантию на наручные часы и качественное сервисное обслуживание.</div>
-                      </div>
-                      <a data-swiper-parallax="-300" href="#" class="slide-main-block__btn btn">Подробнее</a>
-                    </div>
-
-                  </div>
-
-                  <div class="main-block__controll controll-main-block">
-                    <div class="controll-main-block__dotts"></div>
-                    <div class="controll-main-block__fraction fraction-controll">
-                      <span class="fraction-controll__current">0</span> / <span class="fraction-controll__all">0</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="main-block__advantages advantages-main">
-                  <div class="advantages-main__item">
-                      <div class="advantages-main__icon">
-                      <img src="@img/mainpage/main-block/icons/01.png" alt="Icon">
-                      </div>
-                      <div class="advantages-main__text">100% гарантия качества</div>
-                  </div>
-                  <div class="advantages-main__item">
-                      <div class="advantages-main__icon">
-                      <img src="@img/mainpage/main-block/icons/02.png" alt="Icon">
-                    </div> 
-                    <div class="advantages-main__text">Доставка в кратчайшие сроки</div>
-                  </div>
-                  <div class="advantages-main__item">
-                    <div class="advantages-main__icon">
-                      <img src="@img/mainpage/main-block/icons/03.png" alt="Icon">
-                    </div>
-                    <div class="advantages-main__text">Возможность оформления заказа без регистрации</div>
-                  </div>
-                  <div class="advantages-main__item">
-                    <div class="advantages-main__icon">
-                      <img src="@img/mainpage/main-block/icons/04.png" alt="Icon">
-                    </div>
-                    <div class="advantages-main__text">Акции и скидки на популярные товары</div>
-                  </div>   
-              </div>
-            </div>
-
-            <div class="main-block__bg _ibg">
-              <img src="@img/mainpage/main-block/watch.jpg" alt="Watches">
-            </div>
-          </section>
-
-          <section class="page__catalog-cards catalog-cards">
-            <div class="catalog-cards__container">
-              
-              <div class="catalog-cards__item item-catalog-cards">
-                <div class="item-catalog-cards__body">
-                  <h3 class="item-catalog-cards__title">
-                    <a href="" class="item-catalog-cards__link-title">Каталог часов</a>
-                  </h3>
-                  <ul class="item-catalog-cards__list">
-                    <li class="item-catalog-cards__link">Классические часы</li>
-                    <li class="item-catalog-cards__link">Повседневные часы</li>
-                    <li class="item-catalog-cards__link">Дизанерские часы</li>
-                  </ul>
-                </div>
-
-                <div class="item-catalog-cards__bg _ibg">
-                  <img src="img/mainpage/catalog-cards/card-1.jpg" alt="Card">
-                </div>
-              </div>
-
-              <div class="catalog-cards__item item-catalog-cards">
-                <div class="item-catalog-cards__body">
-                  <h3 class="item-catalog-cards__title">
-                    <a href="" class="item-catalog-cards__link-title">Часы ЛЮКС</a>
-                  </h3>
-                  <ul class="item-catalog-cards__list">
-                    <li class="item-catalog-cards__link">Золотые</li>
-                    <li class="item-catalog-cards__link">Серебряные</li>
-                    <li class="item-catalog-cards__link">Титановые</li>
-                    <li class="item-catalog-cards__link">Керамические</li>
-                  </ul>
-                </div>
-
-                <div class="item-catalog-cards__bg _ibg">
-                  <img src="img/mainpage/catalog-cards/card-2.jpg" alt="Card">
-                </div>
-              </div>
-
-              <div class="catalog-cards__item item-catalog-cards">
-                <div class="item-catalog-cards__body">
-                  <h3 class="item-catalog-cards__title">
-                    <a href="" class="item-catalog-cards__link-title">Электронные часы</a>
-                  </h3>
-                  <ul class="item-catalog-cards__list">
-                    <li class="item-catalog-cards__link">Классические часы</li>
-                    <li class="item-catalog-cards__link">Повседневные часы</li>
-                    <li class="item-catalog-cards__link">Дизанерские часы</li>
-                  </ul>
-                </div>
-
-                <div class="item-catalog-cards__bg _ibg">
-                  <img src="img/mainpage/catalog-cards/card-3.jpg" alt="Card">
-                </div>
-              </div>
-
-              <div class="catalog-cards__item item-catalog-cards">
-                <div class="item-catalog-cards__body">
-                  <h3 class="item-catalog-cards__title">
-                    <a href="" class="item-catalog-cards__link-title">Популярные бренды</a>
-                  </h3>
-                  <ul class="item-catalog-cards__list">
-                    <li class="item-catalog-cards__link">Casio</li>
-                    <li class="item-catalog-cards__link">Continental</li>
-                    <li class="item-catalog-cards__link">Orient</li>
-                    <li class="item-catalog-cards__link">Seiko</li>
-                    <li class="item-catalog-cards__link">Tissot</li>
-                  </ul>
-                </div>
-
-                <div class="item-catalog-cards__bg _ibg">
-                  <img src="img/mainpage/catalog-cards/card-4.jpg" alt="Card">
-                </div>
-              </div>
-
-              <div class="catalog-cards__item item-catalog-cards">
-                <div class="item-catalog-cards__body">
-                  <h3 class="item-catalog-cards__title">
-                    <a href="" class="item-catalog-cards__link-title">Шкатулки для часов</a>
-                  </h3>
-                  <ul class="item-catalog-cards__list">
-                    <li class="item-catalog-cards__link">С автоподзаводом</li>
-                    <li class="item-catalog-cards__link">Для хранения</li>
-                  </ul>
-                </div>
-
-                <div class="item-catalog-cards__bg _ibg">
-                  <img src="img/mainpage/catalog-cards/card-7.jpg" alt="Card">
-                </div>
-              </div>
-
-              <div class="catalog-cards__item item-catalog-cards">
-                <div class="item-catalog-cards__body">
-                  <h3 class="item-catalog-cards__title">
-                    <a href="" class="item-catalog-cards__link-title">Аксессуары</a>
-                  </h3>
-                  <ul class="item-catalog-cards__list">
-                    <li class="item-catalog-cards__link">Кожаные изделия</li>
-                    <li class="item-catalog-cards__link">Ручки</li>
-                    <li class="item-catalog-cards__link">Блокноты</li>
-                    <li class="item-catalog-cards__link">Другое</li>
-                  </ul>
-                </div>
-
-                <div class="item-catalog-cards__bg _ibg">
-                  <img src="img/mainpage/catalog-cards/card-6.jpg" alt="Card">
-                </div>
-              </div>
-
-            </div>
-            
-          </section>
-
-          <section class="page__hit-products hit-products">
-            @@include('html/product-slider.html', {
-              "title": "Лидеры продаж",
-              "moretext": "Перейти в каталог",
-             })
-          </section>
-
-          <section class="page__new-products new-products">
-            @@include('html/product-new.html', {
-              "title": "Новинки",
-              "moretext": "Перейти в каталог",
-             })
-          </section>
-          
-          <section class="page__recomend-products recommend-products">
-            @@include('html/product-recommend.html', {
-              "title": "Рекомендуем вам",
-             })
-          </section>
-
-          <section class="page__best-products product-best">
-            <div class="product-best__container">
-              <a href="#" class="product-best__body">
-                <div class="product-best__title">Часы Seiko</div>
-                <div class="product-best__text">Лучшая покупка этого сезона</div>
-              </a>
-            </div>
-          </section>
-
-          <section class="page__articles-module articles-module">
-            <div class="articles-module__container">
-              <div class="articles-module__header">
-                <h2 class="articles-module__title">Последнее в блоге</h2>
-                <a href="#" class="articles-module__more __icon-article"><span>Все статьи</span></a>
-              </div>
-
-              <div class="articles-module__items">
-
-                <article class="articles-module__item item-article">
-
-                  <a href="#" class="item-article__img _ibg">
-                    <img src="@img/mainpage/articles-module/article-1.jpg" alt="">
-                  </a>
-
-                  <div class="item-article__body">
-                    <div class="item-article__date">05.09.2022</div>
-                    <h4 class="item-article__title">
-                      <a href="#" class="item-article__link-title">Подборка новых релизов G-SHOCK 2022 года в разрезе каждого месяца</a>
-                    </h4>
-                  </div>
-                </article>
-
-                <article class="articles-module__item item-article">
-
-                  <a href="#" class="item-article__img _ibg">
-                    <img src="@img/mainpage/articles-module/article-2.jpg" alt="">
-                  </a>
-
-                  <div class="item-article__body">
-                    <div class="item-article__date">05.09.2022</div>
-                    <h4 class="item-article__title">
-                      <a href="#" class="item-article__link-title">Подборка новых релизов G-SHOCK 2022 года в разрезе каждого месяца</a>
-                    </h4>
-                  </div>
-                </article>
-
-                <article class="articles-module__item item-article">
-
-                  <a href="#" class="item-article__img _ibg">
-                    <img src="@img/mainpage/articles-module/article-3.jpg" alt="">
-                  </a>
-
-                  <div class="item-article__body">
-                    <div class="item-article__date">05.09.2022</div>
-                    <h4 class="item-article__title">
-                      <a href="#" class="item-article__link-title">Подборка новых релизов G-SHOCK 2022 года в разрезе каждого месяца</a>
-                    </h4>
-                  </div>
-                </article>                
-
-                <article class="articles-module__item item-article">
-
-                  <a href="#" class="item-article__img _ibg">
-                    <img src="@img/mainpage/articles-module/article-2.jpg" alt="">
-                  </a>
-
-                  <div class="item-article__body">
-                    <div class="item-article__date">05.09.2022</div>
-                    <h4 class="item-article__title">
-                      <a href="#" class="item-article__link-title">Подборка новых релизов G-SHOCK 2022 года в разрезе каждого месяца</a>
-                    </h4>
-                  </div>
-                </article>
-
-              </div>
-            </div>
-          </section>
-
-        </main>
-        @@include('html/footer.html', {})
-    </div>
-    @@include('html/popup.html', {})
-    <script src="js/app.min.js"></script>
-  </body>
+		.rootpage__list{
+			margin: 0px 0px 2.25rem 1.25rem;
+		}
+		.rootpage__list li:not(:last-child){
+			margin: 0px 0px 15px 0px;
+		}
+		.rootpage__contacts,
+		.rootpage__thx{
+			border-radius: 5px;
+			padding: 20px 65px;
+			line-height: 140%;
+		}
+		@media (max-width: 767px){
+		.rootpage__contacts,
+		.rootpage__thx{
+			border-radius:40px;
+			padding: 20px;
+			}
+		}
+		.rootpage__contacts{	
+			border: 1px solid #c93d4b;
+			
+		}
+		.rootpage__contacts a{
+			color: #519dd9;
+		}
+		.rootpage__contacts h2 {
+			color: #43bee5;
+		}
+		.rootpage__thx{
+			border: 1px solid #c93d4b;
+			margin: 0px 0px 1rem 0px;
+		}
+		.rootpage__thx h2 {
+			color: #43bee5;
+		}
+	</style>
 </html>

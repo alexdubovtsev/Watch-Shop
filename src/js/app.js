@@ -36,7 +36,7 @@ forms.formSubmit(true); // Validation (false - off)
 
 forms.formRating();
 
-// forms.formSelect();
+//import "./modules/select.js";
 
 
 // todo Slider (Swiper)

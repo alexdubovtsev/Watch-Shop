@@ -89,11 +89,14 @@ body {
 @import "product-recommend";
 
 @import "home";
+@import "catalog";
 
 @import "common";
 
 
 .page {
+
+    //  ! HOME
 
     // .page__home
     &__home {
@@ -126,6 +129,28 @@ body {
     
     // .page__articles-module
     &__articles-module {
+    }
+
+    // ! CATALOG
+
+    // page__inner
+    &__inner {
+        padding-top: rem(30);
+    }
+    // page__header
+    &__header {
+        margin-bottom: rem(30);
+    }
+
+    // .page__title
+    &__title {
+        font-weight: 700;
+        font-size: rem(24);
+        line-height: math.div(29, 24);
+        &:not(:last-child) {margin-bottom: em(25, 24);}
+    }
+    // page__breadcrumbs
+    &__breadcrumbs {
     }
 }
 
