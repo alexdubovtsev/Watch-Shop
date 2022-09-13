@@ -1,3 +1,5 @@
+//https://refreshless.com/nouislider/examples/
+
 // Подключение из node_modules
 import * as noUiSlider from 'nouislider';
 
@@ -15,7 +17,6 @@ export function rangeInit() {
             const fromValue = document.querySelector('[data-range-from]');
             const toValue = document.querySelector('[data-range-to]');
             const item = document.querySelector('[data-range-item]');
-            console.log(fromValue);
             noUiSlider.create(item, {
                 start: [Number(fromValue.value), Number(toValue.value)], // [0,200000]
                 connect: true,
@@ -24,6 +25,10 @@ export function rangeInit() {
                     'min': [Number(fromValue.dataset.rangeFrom)],
                     'max': [Number(toValue.dataset.rangeTo)]
                 }
+            });
+            item.noUiSlider.on('update', function (values, handle) {
+                fromValue.value = Math.round(values[[0]]);
+                toValue.value = Math.round(values[[1]]);
             });
         });
     }

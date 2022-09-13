@@ -144,7 +144,7 @@
         border: rem(1) solid $color-grey;
         border-radius: rem(5);
         overflow: hidden;
-        &:not(:last-child) {margin-bottom: rem(40);}
+        &:not(:last-child) {margin-bottom: rem(50);}
     }
 
     // .price-filter__input

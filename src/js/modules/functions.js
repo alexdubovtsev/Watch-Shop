@@ -207,9 +207,9 @@ export function spollers() {
             const el = e.target;
             if (el.hasAttribute('data-spoller') || el.closest('[data-spoller]')) {
                 const spollerTitle = el.hasAttribute('data-spoller') ? el : el.closest('[data-spoller]');
-                console.log(spollerTitle);
+                //console.log(spollerTitle);
                 const spollersBlock = spollerTitle.closest('[data-spollers]');
-                console.log(spollersBlock);
+                //console.log(spollersBlock);
                 const oneSpoller = spollersBlock.hasAttribute('data-one-spoller') ? true : false;
                 if (!spollersBlock.querySelectorAll('_slide').lenght) {
                     if (oneSpoller && !spollerTitle.classList.contains('_active')) {
