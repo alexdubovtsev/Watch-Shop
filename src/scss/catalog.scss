@@ -32,7 +32,7 @@
 }
 
 .catalog {
-
+    @include adaptive-value("padding-bottom", 120, 40);
     // .catalog__container
     &__container {
     }
@@ -40,7 +40,7 @@
     // .catalog__body
     &__body {
         display: grid;
-        grid-template-columns: rem(375) 1fr;
+        grid-template-columns: rem(350) 1fr;
         gap: rem(30);
     }
 
@@ -62,12 +62,19 @@
     // .catalog__products
     &__products {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(rem(290), rem(375)));
-        gap: rem(30);
+        grid-template-columns: repeat(auto-fit, minmax(rem(290), rem(300)));
+        @include adaptive-value("gap", 30, 20);
+        &:not(:last-child) {
+            @include adaptive-value("margin-bottom", 60, 30);
+        }
     }
 
     // .catalog__footer
     &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(20);
     }
 
     // .catalog__more
@@ -79,19 +86,30 @@
     }
 }
 
-
 .paggination {
-
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: rem(10);
     // .paggination__arrow
     &__arrow {
+        font-size: rem(18);
     }
 
     // .paggination__arrow-left
     &__arrow-left {
+        transform: rotate(180deg);
+    }
+
+    // .paggination__arrow-right
+    &__arrow-right {
     }
 
     // .paggination__list
     &__list {
+        display: flex;
+        gap: rem(10);
+        align-items: center;
     }
 
     // .paggination__item
@@ -100,11 +118,26 @@
 
     // .paggination__link
     &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(35); 
+        height: rem(35);
+        border-radius: 50%;
+        color: $mainColor;
+        transition: all 0.3s ease 0s;
+        &._active{
+            background-color: $color-red;
+            color: #fff;
+        }
+        @media (any-hover: hover){
+            &:hover{
+                background-color: $color-red;
+                color: #fff;
+            }
+        }
     }
 
-    // .paggination__arrow-right
-    &__arrow-right {
-    }
 }
 
 

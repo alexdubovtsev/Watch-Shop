@@ -663,7 +663,22 @@
         <div class="catalog">
             <div class="catalog__container">
                 <div class="catalog__body">
-                    <div class="catalog__filter"></div>
+                    <div class="catalog__filter filter-catalog">
+                        <div class="filter-catalog__title"></div>
+                        <div data-spollers class="filter-catalog__items">
+                            <div class="filter-catalog__price price-filter">
+                                <button type="button" data-spoller class="price-filter__title __icon-arrow-down">Цена</button>
+                                <div data-range class="price-filter__body">
+                                    <div class="price-filter__inputs">
+                                        <input data-range-from="0" autocomplete="off" type="text" value="500" name="form[]"  class="price-filter__input">
+                                        <input data-range-to="5000" autocomplete="off" type="text" value="1000" name="form[]"  class="price-filter__input">
+                                    </div>
+                                    <div data-range-item class="price-filter__range"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="catalog__content">
                         <div class="catalog__control">
                             <select name="form[]" class="control">
@@ -978,7 +993,7 @@
                                 <button type="button" class="paggination__arrow paggination__arrow-left __icon-arrow-right"></button>
                                 <ul class="paggination__list">
                                     <li class="paggination__item">
-                                        <a href="#" class="paggination__link">1</a>
+                                        <a href="#" class="paggination__link _active">1</a>
                                     </li>
                                     <li class="paggination__item">
                                         <a href="#" class="paggination__link">2</a>

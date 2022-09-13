@@ -38,6 +38,7 @@ forms.formRating();
 
 //import "./modules/select.js";
 
+import "./modules/range.js";
 
 // todo Slider (Swiper)
 

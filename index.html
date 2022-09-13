@@ -1,0 +1,2429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- 
+    <meta name="format-detection" content="telephone=no"> 
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="shortcut icon" href="img/siteicon.ico" />
+    -->
+    <link rel="stylesheet" href="scss/iconsfont.scss?_v=20220909214650">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220909214650">
+    <title>Home</title>
+</head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__top top-header">
+        <div class="top-header__container">
+            <div class="top-header__menu menu-top-header">
+                <nav class="menu-top-header__body">
+                    <ul data-da=".top-header-burger__body, 991.98" class="menu-top-header__list">
+                        <li>
+                            <a href="#" class="menu-top-header__link menu-top-header__link-catalog __icon-arrow-right">Каталог товаров</a>
+                        </li>
+                        <li>
+                            <a data-goto="" href="#" class="menu-top-header__link">О нас</a>
+                        </li>
+                        <li>
+                            <a data-goto="" href="#" class="menu-top-header__link">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a data-goto="" href="#" class="menu-top-header__link">Новости</a>
+                        </li>
+                        <li>
+                            <a data-goto="" href="#" class="menu-top-header__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#" class="top-header__user __icon-user"><span>Личный кабинет</span></a>
+            <nav hidden class="top-header-burger">
+                <div class="top-header-burger__icon icon-header-burger"><span></span></div>
+                <div class="top-header-burger__body">
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header__body body-header">
+        <div class="body-header__container">
+            <a href="#" class="body-header__logo">
+                <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+            </a>
+            <div class="body-header__search">
+                <form action="#" class="search-header">
+                    <button type="submit" class="search-header__button __icon-search"></button>
+                    <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Поиск" class="search-header__input">           
+                </form>
+            </div>
+            <div class="body-header__actions actions-header">
+                <a href="#" class="actions-header__location __icon-location"><span>Москва</span></a>
+                <div data-da=".top-header__container,991.98,first" class="actions-header__phones phones-header">
+                    <div data-spollers class="phones-header__items">
+                        <div class="phones-header__item">
+                            <a href="tel:89621234567" class="phones-header__phone"><span>8-962-123-45-67</span></a>
+                            <button type="button" data-spoller class="phones-header__arrow __icon-arrow-down"></button>
+                            <ul class="phones-header__list">
+                                <li>
+                                    <a href="tel:89621234578" class="phones-header__phone">8-962-123-45-78</a>
+                                </li>
+                                <li>
+                                    <a href="tel:89621234589" class="phones-header__phone">8-962-123-45-89</a>
+                                </li>
+                                <li>
+                                    <a href="tel:89621234590" class="phones-header__phone">8-962-123-45-90</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <button type="button" data-popup="#callback" class="phones-header__callback">Заказать звонок</button> -->
+                    <a href="#callback" class="phones-header__callback popup-link">Заказать звонок</a>
+                </div>
+                <a data-da=".top-header__container,991.98,2" href="#" class="actions-header__favourite __icon-favourite"></a>
+                <a data-da=".top-header__container,991.98,2" href="#" class="actions-header__cart cart-header">
+                    <div class="cart-header__icon __icon-cart"><span>0</span></div>
+                    <div class="cart-header__body">
+                        <div class="cart-header__summ">0 р.</div>
+                        <div class="cart-header__link">Оформить заказ</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__catalog catalog-header">
+        <div class="catalog-header__container">
+            <nav class="catalog-header__menu menu-catalog">
+                <button type="button" class="menu-catalog__btn __icon-arrow-right">Назад</button>
+                <ul class="menu-catalog__list">
+                    <li>
+                        <button data-parent="1"  class="menu-catalog__link">Каталог часов</button>
+                    </li>
+                    <li>
+                        <button data-parent="2" class="menu-catalog__link">Часы ЛЮКС</button>
+                    </li>
+                    <li>
+                        <button data-parent="3" class="menu-catalog__link">Шкаткулки для часов</button>
+                    </li>
+                    <li>
+                        <button data-parent="4" class="menu-catalog__link">Аксессуары</button>
+                    </li>
+                    <li>
+                        <button data-parent="5" class="menu-catalog__link">Подарки</button>
+                    </li>
+                </ul>
+               <div class="menu-catalog__sub-menu sub-menu-catalog">
+                <button type="button" class="sub-menu-catalog__btn __icon-arrow-right">Назад</button>
+                <div class="sub-menu-catalog__container">
+
+                    <div hidden data-submenu="1" class="sub-menu-catalog__block">
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Категория часов</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Классические часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Электронные часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Повседневные часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Дизайнерские часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Спортивные часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Смарт часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Военные часы</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Страна производства</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Швейцария</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Германия</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Япония</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">США</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Россия</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Италия</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Материал корпуса</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Золото</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Серебро</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Кварц</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Титан</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Керамика</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Популярные бренды</a>
+                            <ul class="sub-menu-catalog__list row">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Casio</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Citizen</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Continental</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Ingersoll</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Orient</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Perrelet</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Rodania</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Seiko</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Tissot</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Часовая мастерская</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Полный ремонт</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Замена стекла</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Замена ремешка</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Реставрация корпуса</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Чистка часов</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+                    </div>
+
+
+                    <div hidden data-submenu="2"  class="sub-menu-catalog__block">
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Категория часов</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Классические часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Электронные часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Повседневные часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Дизайнерские часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Спортивные часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Смарт часы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Военные часы</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Страна производства</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Швейцария</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Германия</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Япония</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">США</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Россия</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Италия</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Материал корпуса</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Золото</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Серебро</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Кварц</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Титан</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Керамика</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Бренды</a>
+                            <ul class="sub-menu-catalog__list row">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Armand Nicolet</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Armin Strom</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">BALL</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Corum</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Cuervo y Sobrinos</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">CVSTOS</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Graham</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Gucci </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Ценовой диапазон</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">50.000 - 100.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">100.000 - 200.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">200.000 - 500.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">500.000 - 1.000.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">1.000.000 - 2.000.000 ₽</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">2.000.000 - 4.000.000 ₽</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                    </div>
+
+
+                    <div hidden data-submenu="3"  class="sub-menu-catalog__block">
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Тип шкатулки</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">С автоподзаводом</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для подзавода 1-2 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для подзавода 3-4 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для подзавода 5-8 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для хранения</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для хранения 1-2 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для хранения 3-4 часов</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Для хранения 5-8 часов</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Вид шкатулки</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Подставка</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Роллы</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Футляр</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">С выдвижными отделами</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">С вынимающимися отделами</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Шкатулка-комод</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Шкатулка-трансформер</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Материал</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Металл</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Дерево</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Карбон</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Кожа</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Пластик</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Ткань</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Бренды</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">AllBox</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Altitude</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Avante</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Boda Concept</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Friedrich|23</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">LC Designs Co. Ltd</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+                    </div>
+
+                    
+                    <div hidden data-submenu="4"  class="sub-menu-catalog__block">
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Ручки</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Перьевые</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Шариковые</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Роллеры</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Стержни капиллярные</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Механические карандаши</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+                        
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Кожаные изделия</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Сумки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Барсетки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Бумажники и портмоне</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Клатчи</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Портфели</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Косметички</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Папки для документов</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Другое</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Брелоки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Браслеты</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Зажигалки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Зажимы для денег</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Зажимы для галстуков</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Запонки</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Чехлы для телефона</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Блокноты</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Популярные бренды</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Parker</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Piquadro</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Tateossian</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">TOUS</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">Zippo</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+                    </div>
+
+
+                    <div hidden data-submenu="5"  class="sub-menu-catalog__block">
+                        <div class="sub-menu-catalog__column">
+                            <a href="#" class="sub-menu-catalog__title">Подарочные сертификаты</a>
+                            <ul class="sub-menu-catalog__list">
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На Новый год</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На 14 февраля</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На 23 февраля</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На День рождения</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На свадьбу</a>
+                                </li>
+                                <li class="sub-menu-catalog__item">
+                                    <a href="#" class="sub-menu-catalog__link">На юбилей</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="sub-menu-catalog__view-all">Смотреть все</a>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+        <!-- style="display: none;"  -->
+        <main  class="page page__home">
+
+          <section class="page__main-block main-block">
+            <div class="main-block__container">
+
+              <div class="main-block__body">
+                <div class="main-block__slider">
+                  <div class="main-block__swiper">
+
+                    <div class="main-block__slide slide-main-block">
+                      <div class="slide-main-block__content">
+                        <h2 data-swiper-parallax="-100" class="slide-main-block__title">Интернет магазин часов</h2>
+                        <div data-swiper-parallax="-150" class="slide-main-block__subtitle">Всегда вовремя. Всегда рядом.</div>
+                        <div data-swiper-parallax="-200" class="slide-main-block__text">Добро пожаловать на официальный сайт Timeless! Надежные часы в широком ассортименте, оригинальные аксессуары и кожаные изделия - все это можно найти здесь и создать свой неповторимый стиль. Также наш интернет-магазин предоставляет своим покупателям гарантию на наручные часы и качественное сервисное обслуживание.</div>
+                      </div>
+                      <a data-swiper-parallax="-300" href="#" class="slide-main-block__btn btn">Подробнее</a>
+                    </div>
+
+                    <div class="main-block__slide slide-main-block">
+                      <div class="slide-main-block__content">
+                        <h2 data-swiper-parallax="-100" class="slide-main-block__title">Интернет магазин часов</h2>
+                        <div data-swiper-parallax="-150" class="slide-main-block__subtitle">Всегда вовремя. Всегда рядом.</div>
+                        <div data-swiper-parallax="-200" class="slide-main-block__text">Добро пожаловать на официальный сайт Timeless! Надежные часы в широком ассортименте, оригинальные аксессуары и кожаные изделия - все это можно найти здесь и создать свой неповторимый стиль. Также наш интернет-магазин предоставляет своим покупателям гарантию на наручные часы и качественное сервисное обслуживание.</div>
+                      </div>
+                      <a data-swiper-parallax="-300" href="#" class="slide-main-block__btn btn">Подробнее</a>
+                    </div>
+
+                    <div class="main-block__slide slide-main-block">
+                      <div class="slide-main-block__content">
+                        <h2 data-swiper-parallax="-100" class="slide-main-block__title">Интернет магазин часов</h2>
+                        <div data-swiper-parallax="-150" class="slide-main-block__subtitle">Всегда вовремя. Всегда рядом.</div>
+                        <div data-swiper-parallax="-200" class="slide-main-block__text">Добро пожаловать на официальный сайт Timeless! Надежные часы в широком ассортименте, оригинальные аксессуары и кожаные изделия - все это можно найти здесь и создать свой неповторимый стиль. Также наш интернет-магазин предоставляет своим покупателям гарантию на наручные часы и качественное сервисное обслуживание.</div>
+                      </div>
+                      <a data-swiper-parallax="-300" href="#" class="slide-main-block__btn btn">Подробнее</a>
+                    </div>
+
+                    <div class="main-block__slide slide-main-block">
+                      <div class="slide-main-block__content">
+                        <h2 data-swiper-parallax="-100" class="slide-main-block__title">Интернет магазин часов</h2>
+                        <div data-swiper-parallax="-150" class="slide-main-block__subtitle">Всегда вовремя. Всегда рядом.</div>
+                        <div data-swiper-parallax="-200" class="slide-main-block__text">Добро пожаловать на официальный сайт Timeless! Надежные часы в широком ассортименте, оригинальные аксессуары и кожаные изделия - все это можно найти здесь и создать свой неповторимый стиль. Также наш интернет-магазин предоставляет своим покупателям гарантию на наручные часы и качественное сервисное обслуживание.</div>
+                      </div>
+                      <a data-swiper-parallax="-300" href="#" class="slide-main-block__btn btn">Подробнее</a>
+                    </div>
+
+                  </div>
+
+                  <div class="main-block__controll controll-main-block">
+                    <div class="controll-main-block__dotts"></div>
+                    <div class="controll-main-block__fraction fraction-controll">
+                      <span class="fraction-controll__current">0</span> / <span class="fraction-controll__all">0</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="main-block__advantages advantages-main">
+                  <div class="advantages-main__item">
+                      <div class="advantages-main__icon">
+                      <picture><source srcset="img/mainpage/main-block/icons/01.webp" type="image/webp"><img src="img/mainpage/main-block/icons/01.png" alt="Icon"></picture>
+                      </div>
+                      <div class="advantages-main__text">100% гарантия качества</div>
+                  </div>
+                  <div class="advantages-main__item">
+                      <div class="advantages-main__icon">
+                      <picture><source srcset="img/mainpage/main-block/icons/02.webp" type="image/webp"><img src="img/mainpage/main-block/icons/02.png" alt="Icon"></picture>
+                    </div> 
+                    <div class="advantages-main__text">Доставка в кратчайшие сроки</div>
+                  </div>
+                  <div class="advantages-main__item">
+                    <div class="advantages-main__icon">
+                      <picture><source srcset="img/mainpage/main-block/icons/03.webp" type="image/webp"><img src="img/mainpage/main-block/icons/03.png" alt="Icon"></picture>
+                    </div>
+                    <div class="advantages-main__text">Возможность оформления заказа без регистрации</div>
+                  </div>
+                  <div class="advantages-main__item">
+                    <div class="advantages-main__icon">
+                      <picture><source srcset="img/mainpage/main-block/icons/04.webp" type="image/webp"><img src="img/mainpage/main-block/icons/04.png" alt="Icon"></picture>
+                    </div>
+                    <div class="advantages-main__text">Акции и скидки на популярные товары</div>
+                  </div>   
+              </div>
+            </div>
+
+            <div class="main-block__bg _ibg">
+              <picture><source srcset="img/mainpage/main-block/watch.webp" type="image/webp"><img src="img/mainpage/main-block/watch.jpg" alt="Watches"></picture>
+            </div>
+          </section>
+
+          <section class="page__catalog-cards catalog-cards">
+            <div class="catalog-cards__container">
+              
+              <div class="catalog-cards__item item-catalog-cards">
+                <div class="item-catalog-cards__body">
+                  <h3 class="item-catalog-cards__title">
+                    <a href="" class="item-catalog-cards__link-title">Каталог часов</a>
+                  </h3>
+                  <ul class="item-catalog-cards__list">
+                    <li class="item-catalog-cards__link">Классические часы</li>
+                    <li class="item-catalog-cards__link">Повседневные часы</li>
+                    <li class="item-catalog-cards__link">Дизанерские часы</li>
+                  </ul>
+                </div>
+
+                <div class="item-catalog-cards__bg _ibg">
+                  <picture><source srcset="img/mainpage/catalog-cards/card-1.webp" type="image/webp"><img src="img/mainpage/catalog-cards/card-1.jpg" alt="Card"></picture>
+                </div>
+              </div>
+
+              <div class="catalog-cards__item item-catalog-cards">
+                <div class="item-catalog-cards__body">
+                  <h3 class="item-catalog-cards__title">
+                    <a href="" class="item-catalog-cards__link-title">Часы ЛЮКС</a>
+                  </h3>
+                  <ul class="item-catalog-cards__list">
+                    <li class="item-catalog-cards__link">Золотые</li>
+                    <li class="item-catalog-cards__link">Серебряные</li>
+                    <li class="item-catalog-cards__link">Титановые</li>
+                    <li class="item-catalog-cards__link">Керамические</li>
+                  </ul>
+                </div>
+
+                <div class="item-catalog-cards__bg _ibg">
+                  <picture><source srcset="img/mainpage/catalog-cards/card-2.webp" type="image/webp"><img src="img/mainpage/catalog-cards/card-2.jpg" alt="Card"></picture>
+                </div>
+              </div>
+
+              <div class="catalog-cards__item item-catalog-cards">
+                <div class="item-catalog-cards__body">
+                  <h3 class="item-catalog-cards__title">
+                    <a href="" class="item-catalog-cards__link-title">Электронные часы</a>
+                  </h3>
+                  <ul class="item-catalog-cards__list">
+                    <li class="item-catalog-cards__link">Классические часы</li>
+                    <li class="item-catalog-cards__link">Повседневные часы</li>
+                    <li class="item-catalog-cards__link">Дизанерские часы</li>
+                  </ul>
+                </div>
+
+                <div class="item-catalog-cards__bg _ibg">
+                  <picture><source srcset="img/mainpage/catalog-cards/card-3.webp" type="image/webp"><img src="img/mainpage/catalog-cards/card-3.jpg" alt="Card"></picture>
+                </div>
+              </div>
+
+              <div class="catalog-cards__item item-catalog-cards">
+                <div class="item-catalog-cards__body">
+                  <h3 class="item-catalog-cards__title">
+                    <a href="" class="item-catalog-cards__link-title">Популярные бренды</a>
+                  </h3>
+                  <ul class="item-catalog-cards__list">
+                    <li class="item-catalog-cards__link">Casio</li>
+                    <li class="item-catalog-cards__link">Continental</li>
+                    <li class="item-catalog-cards__link">Orient</li>
+                    <li class="item-catalog-cards__link">Seiko</li>
+                    <li class="item-catalog-cards__link">Tissot</li>
+                  </ul>
+                </div>
+
+                <div class="item-catalog-cards__bg _ibg">
+                  <picture><source srcset="img/mainpage/catalog-cards/card-4.webp" type="image/webp"><img src="img/mainpage/catalog-cards/card-4.jpg" alt="Card"></picture>
+                </div>
+              </div>
+
+              <div class="catalog-cards__item item-catalog-cards">
+                <div class="item-catalog-cards__body">
+                  <h3 class="item-catalog-cards__title">
+                    <a href="" class="item-catalog-cards__link-title">Шкатулки для часов</a>
+                  </h3>
+                  <ul class="item-catalog-cards__list">
+                    <li class="item-catalog-cards__link">С автоподзаводом</li>
+                    <li class="item-catalog-cards__link">Для хранения</li>
+                  </ul>
+                </div>
+
+                <div class="item-catalog-cards__bg _ibg">
+                  <picture><source srcset="img/mainpage/catalog-cards/card-7.webp" type="image/webp"><img src="img/mainpage/catalog-cards/card-7.jpg" alt="Card"></picture>
+                </div>
+              </div>
+
+              <div class="catalog-cards__item item-catalog-cards">
+                <div class="item-catalog-cards__body">
+                  <h3 class="item-catalog-cards__title">
+                    <a href="" class="item-catalog-cards__link-title">Аксессуары</a>
+                  </h3>
+                  <ul class="item-catalog-cards__list">
+                    <li class="item-catalog-cards__link">Кожаные изделия</li>
+                    <li class="item-catalog-cards__link">Ручки</li>
+                    <li class="item-catalog-cards__link">Блокноты</li>
+                    <li class="item-catalog-cards__link">Другое</li>
+                  </ul>
+                </div>
+
+                <div class="item-catalog-cards__bg _ibg">
+                  <picture><source srcset="img/mainpage/catalog-cards/card-6.webp" type="image/webp"><img src="img/mainpage/catalog-cards/card-6.jpg" alt="Card"></picture>
+                </div>
+              </div>
+
+            </div>
+            
+          </section>
+
+          <section class="page__hit-products hit-products">
+            <section class="products-slider">
+    <div class="products-slider__container">
+      <div class="products-slider__header">
+        <h2 class="products-slider__title">Лидеры продаж</h2>
+        <a href="#" class="products-slider__more"><span>Перейти в каталог</span></a>
+      </div>
+      <div class="products-slider__slider">
+        <div class="products-slider__swiper">
+
+          <div class="products-slider__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-slider__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1 Lorem ipsum dolor sit amet.</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-slider__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-slider__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-slider__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1 Lorem ipsum dolor sit amet.</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-slider__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-slider__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-slider__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-slider__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+          
+        </div>
+        <div class="products-slider__dotts"></div>
+      </div>
+    </div>
+</section>
+          </section>
+
+          <section class="page__new-products new-products">
+            <section class="products-new">
+    <div class="products-new__container">
+      <div class="products-new__body">
+        <h2 class="products-new__title">Новинки</h2>
+        <div class="products-new__text">
+          На протяжении 20 лет наша компания занимает лидирующие позиции по продаже оригинальных наручных часов в России. В нашем ассортименте более 15 тысяч моделей популярных брендов – от премиальных швейцарских до демократичных японских, американских, немецких и российских производителей. Также у нас представлен огромный выбор аксессуаров и шкатулок для часов.
+        </div>
+        <a href="#" class="products-new__more __icon-arrow-right"><span>Перейти в каталог</span></a>
+        <!-- <div class="products-new__bg _ibg">
+            <picture><source srcset="img/mainpage/product-new/bg.webp" type="image/webp"><img src="img/mainpage/product-new/bg.jpg" alt=""></picture>
+        </div> -->
+      </div>
+      <div class="products-new__slider">
+        <div class="products-new__swiper">
+
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-2.webp" type="image/webp"><img src="img/mainpage/product-card/product-2.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-3.webp" type="image/webp"><img src="img/mainpage/product-card/product-3.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+          
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-2.webp" type="image/webp"><img src="img/mainpage/product-card/product-2.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-3.webp" type="image/webp"><img src="img/mainpage/product-card/product-3.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-3.webp" type="image/webp"><img src="img/mainpage/product-card/product-3.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+          
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-2.webp" type="image/webp"><img src="img/mainpage/product-card/product-2.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-new__slide">
+            <article class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-3.webp" type="image/webp"><img src="img/mainpage/product-card/product-3.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+        </div>
+        <div class="products-new__dotts"></div>
+      </div>
+    </div>
+    <div class="products-new__bg _ibg">
+      <picture><source srcset="img/mainpage/product-new/bg.webp" type="image/webp"><img src="img/mainpage/product-new/bg.jpg" alt=""></picture>
+  </div>
+</section>
+          </section>
+          
+          <section class="page__recomend-products recommend-products">
+            <section class="products-recommend">
+    <div class="products-recommend__container">
+      <div class="products-recommend__header">
+        <h2 class="products-recommend__title">Рекомендуем вам</h2>
+        <div class="products-recommend__btns">
+            <div class="products-recommend__arrows">
+                <button type="button" class="swiper-button-prev"></button>
+                <button type="button" class="swiper-button-next"></button>
+            </div>
+            <a href="#" class="products-recommend__more __icon-catalog"></a>
+        </div>
+      </div>
+      <div class="products-recommend__slider">
+        <div class="products-recommend__swiper">
+
+          <div class="products-recommend__slide">
+            <article data-sale="-55%" class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">
+                            <div class="product-card__price-full">47 835</div>
+                            <div class="product-card__price-sale">21 525</div>
+                        </div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-recommend__slide">
+            <article data-sale="-99%" class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1 Lorem ipsum dolor sit amet.</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">
+                            <div class="product-card__price-full">47 835</div>
+                            <div class="product-card__price-sale">21 525</div>
+                        </div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-recommend__slide">
+            <article data-sale="-75%" class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">
+                            <div class="product-card__price-full">47 835</div>
+                            <div class="product-card__price-sale">21 525</div>
+                        </div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-recommend__slide">
+            <article data-sale="-55%" class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-recommend__slide">
+            <article data-sale="-99%" class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1 Lorem ipsum dolor sit amet.</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-recommend__slide">
+            <article data-sale="-75%" class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-recommend__slide">
+            <article data-sale="-55%" class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь Lorem ipsum dolor sit amet.</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-recommend__slide">
+            <article data-sale="-99%" class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1 Lorem ipsum dolor sit amet.</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+          <div class="products-recommend__slide">
+            <article data-sale="-75%" class="product-card">
+                <a href="#" class="product-card__img-ibg">
+                    <picture><source srcset="img/mainpage/product-card/product-1.webp" type="image/webp"><img src="img/mainpage/product-card/product-1.jpg" alt="Product card"></picture>
+                </a>
+
+                <div class="product-card__body">
+                    <h4 class="product-card__title">
+                        <a href="#" class="product-card__link-title">SEIKO Prospex SSC813P1</a>
+                    </h4>
+
+                    <div class="product-card__materials">Кварц, сталь</div>
+
+                    <div class="product-card__rating rating rating_set">
+                        <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                                <input type="radio" class="rating__item" value="1" name="rating">
+                                <input type="radio" class="rating__item" value="2" name="rating">
+                                <input type="radio" class="rating__item" value="3" name="rating">
+                                <input type="radio" class="rating__item" value="4" name="rating">
+                                <input type="radio" class="rating__item" value="5" name="rating">
+                            </div>
+                        </div>
+                        <div class="rating__value">4.3</div>
+                        <div class="rating__info">10 Отзывов</div>
+                    </div>
+
+                    <div class="product-card__footer">
+                        <div class="product-card__price __icon-ruble">47 835</div>
+                        <a href="#" class="product-card__compare __icon-compare"></a>
+                        <a href="" class="product-card__favourite __icon-favourite"></a>
+                    </div>
+
+                    <a href="#" class="product-card__btn btn"><span class="__icon-cart">Купить</span></a>
+                </div>
+            </article>
+          </div>
+
+        </div>
+
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <div class="products-recommend__dotts"></div>
+      </div>
+    </div>
+</section>
+
+
+          </section>
+
+          <section class="page__best-products product-best">
+            <div class="product-best__container">
+              <a href="#" class="product-best__body">
+                <div class="product-best__title">Часы Seiko</div>
+                <div class="product-best__text">Лучшая покупка этого сезона</div>
+              </a>
+            </div>
+          </section>
+
+          <section class="page__articles-module articles-module">
+            <div class="articles-module__container">
+              <div class="articles-module__header">
+                <h2 class="articles-module__title">Последнее в блоге</h2>
+                <a href="#" class="articles-module__more __icon-article"><span>Все статьи</span></a>
+              </div>
+
+              <div class="articles-module__items">
+
+                <article class="articles-module__item item-article">
+
+                  <a href="#" class="item-article__img _ibg">
+                    <picture><source srcset="img/mainpage/articles-module/article-1.webp" type="image/webp"><img src="img/mainpage/articles-module/article-1.jpg" alt=""></picture>
+                  </a>
+
+                  <div class="item-article__body">
+                    <div class="item-article__date">05.09.2022</div>
+                    <h4 class="item-article__title">
+                      <a href="#" class="item-article__link-title">Подборка новых релизов G-SHOCK 2022 года в разрезе каждого месяца</a>
+                    </h4>
+                  </div>
+                </article>
+
+                <article class="articles-module__item item-article">
+
+                  <a href="#" class="item-article__img _ibg">
+                    <picture><source srcset="img/mainpage/articles-module/article-2.webp" type="image/webp"><img src="img/mainpage/articles-module/article-2.jpg" alt=""></picture>
+                  </a>
+
+                  <div class="item-article__body">
+                    <div class="item-article__date">05.09.2022</div>
+                    <h4 class="item-article__title">
+                      <a href="#" class="item-article__link-title">Подборка новых релизов G-SHOCK 2022 года в разрезе каждого месяца</a>
+                    </h4>
+                  </div>
+                </article>
+
+                <article class="articles-module__item item-article">
+
+                  <a href="#" class="item-article__img _ibg">
+                    <picture><source srcset="img/mainpage/articles-module/article-3.webp" type="image/webp"><img src="img/mainpage/articles-module/article-3.jpg" alt=""></picture>
+                  </a>
+
+                  <div class="item-article__body">
+                    <div class="item-article__date">05.09.2022</div>
+                    <h4 class="item-article__title">
+                      <a href="#" class="item-article__link-title">Подборка новых релизов G-SHOCK 2022 года в разрезе каждого месяца</a>
+                    </h4>
+                  </div>
+                </article>                
+
+                <article class="articles-module__item item-article">
+
+                  <a href="#" class="item-article__img _ibg">
+                    <picture><source srcset="img/mainpage/articles-module/article-2.webp" type="image/webp"><img src="img/mainpage/articles-module/article-2.jpg" alt=""></picture>
+                  </a>
+
+                  <div class="item-article__body">
+                    <div class="item-article__date">05.09.2022</div>
+                    <h4 class="item-article__title">
+                      <a href="#" class="item-article__link-title">Подборка новых релизов G-SHOCK 2022 года в разрезе каждого месяца</a>
+                    </h4>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </section>
+
+        </main>
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__body body-footer">
+
+            <div class="body-footer__row">
+
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer_spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <!-- <a href="#" class="spoller-item-footer__title">Заголовок</a>
+                            <button type="button" data-spoller class="spoller-item-footer__icon"></button> -->
+                            <button type="button" data-spoller class="spoller-item-footer__title">Информация</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="footer-menu">
+                                    <ul class="footer-menu__list">
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">О нас</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Политика конфиденциальности</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Карта сайта</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer_spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Служба поддержки</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="footer-menu">
+                                    <ul class="footer-menu__list">
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Заказ</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Доставка</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Возврат</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer_spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Дополнительно</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="footer-menu">
+                                    <ul class="footer-menu__list">
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Партнеры</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Подарочные сертификаты</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Товары со скидкой</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Вакансии</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer_spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Личный кабинет</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="footer-menu">
+                                    <ul class="footer-menu__list">
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Личный кабинет</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">История покупок</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Закладки</a>
+                                        </li>
+                                     </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="body-footer__row">
+
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer_spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Контакты</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="footer-menu">
+                                    <ul class="footer-menu__list">
+                                        <li class="footer-menu__item">
+                                            <a href="tel:89621234567" class="footer-menu__link __icon-footer-phone">8-962-123-45-67</a>
+                                            <p class="footer-menu__link-free-phone">Бесплатный звонок по РФ</p>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link __icon-footer-time">Часы работы</a>
+                                            <p class="footer-menu__link-shedule">Пн-Пт 10:00-21:00 (МСК)</p>
+                                        </li>
+                                        <li class="footer-menu__item footer-location">
+                                            <div data-spollers class="footer-location__items">
+                                                <div class="footer-location__item">
+                                                    <a href="#" class="footer-location__title __icon-footer-location">Москва</a>
+                                                    <button type="button" data-spoller class="footer-location__arrow __icon-arrow-down"></button>
+                                                    <ul class="footer-location__list">
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Санкт-Петербург</div>
+                                                            <a href="tel:89621234570" class="footer-location__phone">8-962-123-45-70</a>
+                                                        </li>
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Калининград</div>
+                                                            <a href="tel:89621234571" class="footer-location__phone">8-962-123-45-71</a>
+                                                        </li>
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Екатеринбург</div>
+                                                            <a href="tel:89621234572" class="footer-location__phone">8-962-123-45-72</a>
+                                                        </li>
+
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Санкт-Петербург</div>
+                                                            <a href="tel:89621234570" class="footer-location__phone">8-962-123-45-70</a>
+                                                        </li>
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Калининград</div>
+                                                            <a href="tel:89621234571" class="footer-location__phone">8-962-123-45-71</a>
+                                                        </li>
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Екатеринбург</div>
+                                                            <a href="tel:89621234572" class="footer-location__phone">8-962-123-45-72</a>
+                                                        </li>
+
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Санкт-Петербург</div>
+                                                            <a href="tel:89621234570" class="footer-location__phone">8-962-123-45-70</a>
+                                                        </li>
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Калининград</div>
+                                                            <a href="tel:89621234571" class="footer-location__phone">8-962-123-45-71</a>
+                                                        </li>
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Екатеринбург</div>
+                                                            <a href="tel:89621234572" class="footer-location__phone">8-962-123-45-72</a>
+                                                        </li>
+
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Санкт-Петербург</div>
+                                                            <a href="tel:89621234570" class="footer-location__phone">8-962-123-45-70</a>
+                                                        </li>
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Калининград</div>
+                                                            <a href="tel:89621234571" class="footer-location__phone">8-962-123-45-71</a>
+                                                        </li>
+                                                        <li class="footer-location__li">
+                                                            <div class="footer-location__city">Екатеринбург</div>
+                                                            <a href="tel:89621234572" class="footer-location__phone">8-962-123-45-72</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="mailto:info@timeless.ru" class="footer-menu__link __icon-footer-mail">info@timeless.ru</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <ul class="footer-socials">
+                                    <li class="footer-socials__li">
+                                        <a href="#" class="footer-socials__link __icon-inst"></a>
+                                    </li>
+                                    <li class="footer-socials__li">
+                                        <a href="#" class="footer-socials__link __icon-tg"></a>
+                                    </li>
+                                    <li class="footer-socials__li">
+                                        <a href="#" class="footer-socials__link __icon-whatsapp"></a>
+                                    </li>
+                                    <li class="footer-socials__li">
+                                        <a href="#" class="footer-socials__link __icon-fb"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer_spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Покупателям</button>
+                            <div class="spoller-item-footer__body">
+                                <nav class="footer-menu">
+                                    <ul class="footer-menu__list">
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Скидки</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Блог</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Частые вопросы</a>
+                                        </li>
+                                        <li class="footer-menu__item">
+                                            <a href="#" class="footer-menu__link">Способы оплаты и доставки</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer_spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Гарантия</button>
+                            <div class="spoller-item-footer__body">
+                                <div class="spoller-item-footer__guarantee">
+                                    Недовольны своей покупкой? Вы можете вернуть ее в течении 30 дней с даты получения, согласно <a href="#">нашим правилам</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="body-footer__item item-footer">
+                    <div data-spollers="767.98" class="item-footer_spoller spoller-item-footer">
+                        <div class="spoller-item-footer__item">
+                            <button type="button" data-spoller class="spoller-item-footer__title">Новостная рассылка</button>
+                            <form action="#" class="spoller-item-footer__body footer-subscribe">
+                                <label for="subscribe-input" class="footer-subscribe__label">Подписаться сейчас</label>
+                                <div class="footer-subscribe__line">
+                                    <input id="subscribe-input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-required="email" placeholder="Введите свой email" class="footer-subscribe__input">
+                                    <button type="submit" class="footer-subscribe__button __icon-arrow-right"></button>
+                                </div>
+                                <div class="footer-subscribe__policy">Подписываясь на рассылку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>.</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="body-footer__last">
+               <div class="body-footer__rules">
+                Все права защищены. Информация на сайте не является публичной офертой. Статус наличия и цена изделий на сайте и в розничных салонах могут не совпадать. Стоимость товара, указанная в интернет-магазине, действительная в магазинах Timeless.ru только в случае оформления резерва через сайт.
+               </div> 
+               <div class="body-footer__copy">Магазин часов <span>Timeless.ru 2022 ©</span></div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <div id="callback" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <!-- <button data-close type="button" class="popup__close close-popup"></button> -->
+            <a href="##" class="popup__close close-popup">x</a>
+            <div class="popup__text">
+                Заказать звонок
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div id="popup" class="popup">
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <a href="##" class="popup__close close-popup">x</a>
+        <div class="popup__title">
+            Popup Title
+        </div>
+        <div class="popup__text">
+            Popup text
+        </div>
+      </div>
+    </div>
+</div> -->
+
+<!-- <div id="popup-img" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content popup__content-img">
+        <a href="##" class="popup__close close-popup">x</a>
+        <div class="popup__img">
+            <img src="" alt="">
+        </div>
+      </div>
+    </div>
+</div> -->
+
+
+
+
+<!-- <div id="popup" aria-hidden="true" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <button data-close type="button" class="popup__close"></button>
+            <div class="popup__text">
+                
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+    <script src="js/app.min.js?_v=20220909214650"></script>
+  </body>
+</html>
