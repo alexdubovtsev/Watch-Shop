@@ -28,16 +28,404 @@
                     <div class="catalog__filter filter-catalog">
                         <div class="filter-catalog__title">Фильтр товаров</div>
                         <div data-spollers class="filter-catalog__items">
+
                             <div class="filter-catalog__price price-filter">
-                                <button type="button" data-spoller class="price-filter__title __icon-arrow-down">Цена</button>
+                                <button type="button" data-spoller class="price-filter__title __icon-arrow-down filter-arrow _active">Цена</button>
                                 <div data-range class="price-filter__body">
                                     <div class="price-filter__inputs">
-                                        <input data-range-from="0" autocomplete="off" type="text" value="50000" name="form[]"  class="price-filter__input">
-                                        <input data-range-to="1000000" autocomplete="off" type="text" value="420000" name="form[]"  class="price-filter__input">
+                                        <input data-range-from="0" autocomplete="off" type="text" value="100000" name="form[]"  class="price-filter__input">
+                                        <input data-range-to="1000000" autocomplete="off" type="text" value="500000" name="form[]"  class="price-filter__input">
                                     </div>
                                     <div data-range-item class="price-filter__range"></div>
                                 </div>
                             </div>
+                            
+                            <div class="filter-catalog__item item-filter-catalog">
+                                <button type="button" data-spoller class="item-filter-catalog__title __icon-arrow-down filter-arrow _active">Материал корпуса</button>
+                                <div class="item-filter-catalog__body">
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Золото<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_2" class="checkbox__label"><span class="checkbox__text">Белое золото<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_3" class="checkbox__label"><span class="checkbox__text">Розовое золото<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_4" class="checkbox__label"><span class="checkbox__text">Желтое золото<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_5" class="checkbox__label"><span class="checkbox__text">Кварц<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Титан<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_7" class="checkbox__label"><span class="checkbox__text">Керамика<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_8" class="checkbox__label"><span class="checkbox__text">Серебро<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_9" class="checkbox__label"><span class="checkbox__text">Металл<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_10" class="checkbox__label"><span class="checkbox__text">Сталь<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_11" class="checkbox__label"><span class="checkbox__text">Алюминий<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_12" class="checkbox__label"><span class="checkbox__text">Бронза<small>(100)</small></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-catalog__item item-filter-catalog">
+                                <button type="button" data-spoller class="item-filter-catalog__title __icon-arrow-down filter-arrow">Цвет корпуса</button>
+                                <div class="item-filter-catalog__body">
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Белый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_2" class="checkbox__label"><span class="checkbox__text">Двухцветный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_3" class="checkbox__label"><span class="checkbox__text">Желтый<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_4" class="checkbox__label"><span class="checkbox__text">Позолоченный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_5" class="checkbox__label"><span class="checkbox__text">Прозрачный<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Розовый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_7" class="checkbox__label"><span class="checkbox__text">Серый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_8" class="checkbox__label"><span class="checkbox__text">Синий<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_9" class="checkbox__label"><span class="checkbox__text">Черный<small>(1000)</small></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-catalog__item item-filter-catalog">
+                                <button type="button" data-spoller class="item-filter-catalog__title __icon-arrow-down filter-arrow">Механизм</button>
+                                <div class="item-filter-catalog__body">
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Белый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_2" class="checkbox__label"><span class="checkbox__text">Двухцветный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_3" class="checkbox__label"><span class="checkbox__text">Желтый<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_4" class="checkbox__label"><span class="checkbox__text">Позолоченный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_5" class="checkbox__label"><span class="checkbox__text">Прозрачный<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Розовый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_7" class="checkbox__label"><span class="checkbox__text">Серый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_8" class="checkbox__label"><span class="checkbox__text">Синий<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_9" class="checkbox__label"><span class="checkbox__text">Черный<small>(1000)</small></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-catalog__item item-filter-catalog">
+                                <button type="button" data-spoller class="item-filter-catalog__title __icon-arrow-down filter-arrow">Страна производства</button>
+                                <div class="item-filter-catalog__body">
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Австрия<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Бельгия<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Великобритания<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Германия<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Дания<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_7" class="checkbox__label"><span class="checkbox__text">Италия<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_8" class="checkbox__label"><span class="checkbox__text">Россия<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Турция<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_9" class="checkbox__label"><span class="checkbox__text">США<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Франция<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_10" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_10" class="checkbox__label"><span class="checkbox__text">Швейцария<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_11" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_11" class="checkbox__label"><span class="checkbox__text">Япония<small>(100)</small></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-catalog__item item-filter-catalog">
+                                <button type="button" data-spoller class="item-filter-catalog__title __icon-arrow-down filter-arrow">Категория часов</button>
+                                <div class="item-filter-catalog__body">
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_12" class="checkbox__label"><span class="checkbox__text">Классические<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_13" class="checkbox__label"><span class="checkbox__text">Электронные<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_14" class="checkbox__label"><span class="checkbox__text">Повседневные<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_15" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_15" class="checkbox__label"><span class="checkbox__text">Дизайнерские<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_16" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_16" class="checkbox__label"><span class="checkbox__text">Спортивные<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_17" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_17" class="checkbox__label"><span class="checkbox__text">Смарт<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_18" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_18" class="checkbox__label"><span class="checkbox__text">Военные<small>(100)</small></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-catalog__item item-filter-catalog">
+                                <button type="button" data-spoller class="item-filter-catalog__title __icon-arrow-down filter-arrow">Браслет/ремешок</button>
+                                <div class="item-filter-catalog__body">
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_12" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_12" class="checkbox__label"><span class="checkbox__text">Классические<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_13" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_13" class="checkbox__label"><span class="checkbox__text">Электронные<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_14" class="checkbox__label"><span class="checkbox__text">Повседневные<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_15" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_15" class="checkbox__label"><span class="checkbox__text">Дизайнерские<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_16" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_16" class="checkbox__label"><span class="checkbox__text">Спортивные<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_17" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_17" class="checkbox__label"><span class="checkbox__text">Смарт<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_18" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_18" class="checkbox__label"><span class="checkbox__text">Военные<small>(100)</small></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-catalog__item item-filter-catalog">
+                                <button type="button" data-spoller class="item-filter-catalog__title __icon-arrow-down filter-arrow">Декор</button>
+                                <div class="item-filter-catalog__body">
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Белый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_2" class="checkbox__label"><span class="checkbox__text">Двухцветный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_3" class="checkbox__label"><span class="checkbox__text">Желтый<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_4" class="checkbox__label"><span class="checkbox__text">Позолоченный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_5" class="checkbox__label"><span class="checkbox__text">Прозрачный<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Розовый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_7" class="checkbox__label"><span class="checkbox__text">Серый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_8" class="checkbox__label"><span class="checkbox__text">Синий<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_9" class="checkbox__label"><span class="checkbox__text">Черный<small>(1000)</small></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-catalog__item item-filter-catalog">
+                                <button type="button" data-spoller class="item-filter-catalog__title __icon-arrow-down filter-arrow">Дополнительные опции</button>
+                                <div class="item-filter-catalog__body">
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Белый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_2" class="checkbox__label"><span class="checkbox__text">Двухцветный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_3" class="checkbox__label"><span class="checkbox__text">Желтый<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_4" class="checkbox__label"><span class="checkbox__text">Позолоченный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_5" class="checkbox__label"><span class="checkbox__text">Прозрачный<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Розовый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_7" class="checkbox__label"><span class="checkbox__text">Серый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_8" class="checkbox__label"><span class="checkbox__text">Синий<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_9" class="checkbox__label"><span class="checkbox__text">Черный<small>(1000)</small></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-catalog__item item-filter-catalog">
+                                <button type="button" data-spoller class="item-filter-catalog__title __icon-arrow-down filter-arrow">Рекомендации</button>
+                                <div class="item-filter-catalog__body">
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Белый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_2" class="checkbox__label"><span class="checkbox__text">Двухцветный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_3" class="checkbox__label"><span class="checkbox__text">Желтый<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_4" class="checkbox__label"><span class="checkbox__text">Позолоченный<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_5" class="checkbox__label"><span class="checkbox__text">Прозрачный<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_6" class="checkbox__label"><span class="checkbox__text">Розовый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_7" class="checkbox__label"><span class="checkbox__text">Серый<small>(100)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_8" class="checkbox__label"><span class="checkbox__text">Синий<small>(200)</small></span></label>
+                                    </div>
+                                    <div class="item-filter-catalog__checkbox checkbox">
+                                        <input id="c_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_9" class="checkbox__label"><span class="checkbox__text">Черный<small>(1000)</small></span></label>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
