@@ -41,8 +41,11 @@
     &__body {
         display: grid;
         align-items: start;
-        grid-template-columns: rem(350) 1fr;
-        gap: rem(30);
+
+        @media (min-width: #{$tablet + px} ){
+            grid-template-columns: rem(350) 1fr;
+            gap: rem(30);
+        }
     }
 
     // .catalog__filter
@@ -77,10 +80,14 @@
         align-items: center;
         justify-content: space-between;
         gap: rem(20);
+        @media (max-width: #{$tablet + px}){
+            flex-direction: column;
+        }
     }
 
     // .catalog__more
     &__more {
+        //width: 100%;
     }
     
     // .catalog__paggination
@@ -102,10 +109,29 @@
         line-height: math.div(27 , 20);
         padding: rem(20) rem(30);
         height: rem(70);
+        width: 100%;
+        @media (max-width: #{$tablet + px}){
+            height: rem(50);
+            padding: 0 rem(20);
+        }
     }
 
     // .filter-catalog__items
     &__items {
+        transition: all 0.3s ease 0s;
+        @media (max-width: #{$tablet + px}){
+            //display: none;
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            &._active {
+                //display: block;
+                height: 100%;
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.3s ease 0s;
+            }
+        }
     }
 
     // .filter-catalog__item
@@ -124,7 +150,7 @@
         color: $color-red;
         transition: all 0.3s ease 0s;
     }
-    &._active {
+    &._spoller-active {
         &::before{
             transform: rotate(-180deg);
         }
@@ -133,6 +159,7 @@
 
 .price-filter {
     padding: rem(30);
+    background-color: rgba($color: $color-silver, $alpha: .15);
     // .price-filter__title
     &__title {
         display: inline-flex;
@@ -163,6 +190,7 @@
         width: 50%;
         height: rem(42);
         padding: 0 rem(15);
+        font-size: rem(18);
         &:first-child{
             border-right: rem(1) solid $color-grey;
         }
@@ -186,6 +214,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         font-size: rem(20);
+        text-align: left;
         background-color: rgba($color: $color-silver, $alpha: .15);
     }
 
@@ -208,7 +237,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: rem(10);
+    @include adaptive-value("gap", 30, 15);
     // .paggination__arrow
     &__arrow {
         font-size: rem(18);

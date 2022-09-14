@@ -27,7 +27,7 @@
         min-height: rem(50);
         @media (max-width: #{$tablet + px}) {
             gap: rem(30);
-            max-width: 100%;
+            //max-width: 100%;
         }
     }
 
@@ -203,7 +203,7 @@
         //     justify-content: space-between;
         // }
         @media (max-width: #{$tablet + px}) {
-            max-width: 100%;
+            //max-width: 100%;
         }
     }
 
@@ -367,7 +367,7 @@
         font-size: rem(20);
         margin-left: em(10, 20);
         transition: transform 0.3s ease 0s;
-        &._active {
+        &._spoller-active {
             transform: rotate(-180deg);
         }
         @media (max-width: #{$tablet + px}) {display: none;}

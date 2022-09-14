@@ -47,6 +47,7 @@
 	}
 	// .checkbox__text
 	&__text {
+		@include adaptive-value("font-size", 18, 16);
         small {
             color: $color-red;
 			padding-left: rem(5);

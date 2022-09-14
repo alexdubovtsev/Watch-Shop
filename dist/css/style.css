@@ -262,7 +262,6 @@ body._lock {
 @media (max-width: 991.98px) {
   .top-header__container {
     gap: 1.875rem;
-    max-width: 100%;
   }
 }
 .top-header__menu {
@@ -461,11 +460,6 @@ body._lock {
   display: flex;
   align-items: center;
 }
-@media (max-width: 991.98px) {
-  .body-header__container {
-    max-width: 100%;
-  }
-}
 .body-header__logo {
   position: relative;
   flex: 0 1 4.375rem;
@@ -642,7 +636,7 @@ body._lock {
   margin-left: 0.5em;
   transition: transform 0.3s ease 0s;
 }
-.phones-header__arrow._active {
+.phones-header__arrow._spoller-active {
   transform: rotate(-180deg);
 }
 @media (max-width: 991.98px) {
@@ -2813,8 +2807,12 @@ body._lock {
 .catalog__body {
   display: grid;
   align-items: start;
-  grid-template-columns: 21.875rem 1fr;
-  gap: 1.875rem;
+}
+@media (min-width: 991.98px) {
+  .catalog__body {
+    grid-template-columns: 21.875rem 1fr;
+    gap: 1.875rem;
+  }
 }
 .catalog__control {
   display: flex;
@@ -2852,6 +2850,11 @@ body._lock {
   justify-content: space-between;
   gap: 1.25rem;
 }
+@media (max-width: 991.98px) {
+  .catalog__footer {
+    flex-direction: column;
+  }
+}
 .filter-catalog {
   border: 0.0625rem solid rgba(192, 192, 192, 0.849);
   background-color: #fefefe;
@@ -2865,18 +2868,42 @@ body._lock {
   line-height: 1.35;
   padding: 1.25rem 1.875rem;
   height: 4.375rem;
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .filter-catalog__title {
+    height: 3.125rem;
+    padding: 0 1.25rem;
+  }
+}
+.filter-catalog__items {
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 991.98px) {
+  .filter-catalog__items {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .filter-catalog__items._active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease 0s;
+  }
 }
 .filter-arrow::before {
   font-size: 1.125rem;
   color: #d36969;
   transition: all 0.3s ease 0s;
 }
-.filter-arrow._active::before {
+.filter-arrow._spoller-active::before {
   transform: rotate(-180deg);
 }
 
 .price-filter {
   padding: 1.875rem;
+  background-color: rgba(192, 192, 192, 0.15);
 }
 .price-filter__title {
   display: inline-flex;
@@ -2903,6 +2930,7 @@ body._lock {
   width: 50%;
   height: 2.625rem;
   padding: 0 0.9375rem;
+  font-size: 1.125rem;
 }
 .price-filter__input:first-child {
   border-right: 0.0625rem solid rgba(0, 0, 0, 0.7);
@@ -2916,6 +2944,7 @@ body._lock {
   flex-direction: row-reverse;
   justify-content: space-between;
   font-size: 1.25rem;
+  text-align: left;
   background-color: rgba(192, 192, 192, 0.15);
 }
 .item-filter-catalog__body {
@@ -2930,7 +2959,16 @@ body._lock {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.625rem;
+}
+@supports (gap: clamp( 0.9375rem , 0.6597222222rem  +  1.3888888889vw , 1.875rem )) {
+  .paggination {
+    gap: clamp( 0.9375rem , 0.6597222222rem  +  1.3888888889vw , 1.875rem );
+  }
+}
+@supports not (gap: clamp( 0.9375rem , 0.6597222222rem  +  1.3888888889vw , 1.875rem )) {
+  .paggination {
+    gap: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 67.5);
+  }
 }
 .paggination__arrow {
   font-size: 1.125rem;
@@ -3168,6 +3206,11 @@ body._lock {
   height: 2.5rem;
   padding: 0 1.25rem;
   font-size: 1rem;
+}
+@media (max-width: 479.98px) {
+  .control {
+    width: 100%;
+  }
 }
 /* Functional styling;
  * These styles are required for noUiSlider to function.
@@ -3525,6 +3568,16 @@ body._lock {
   transform: scale(0);
   border-radius: 50%;
   transition: all 0.3s ease 0s;
+}
+@supports (font-size: clamp( 1rem , 0.962962963rem  +  0.1851851852vw , 1.125rem )) {
+  .checkbox__text {
+    font-size: clamp( 1rem , 0.962962963rem  +  0.1851851852vw , 1.125rem );
+  }
+}
+@supports not (font-size: clamp( 1rem , 0.962962963rem  +  0.1851851852vw , 1.125rem )) {
+  .checkbox__text {
+    font-size: calc(1rem + 0.125 * (100vw - 20rem) / 67.5);
+  }
 }
 .checkbox__text small {
   color: #d36969;
