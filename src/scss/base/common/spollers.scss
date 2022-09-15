@@ -40,7 +40,7 @@
 			transition: transform 0.5s ease 0s;
 			padding: rem(5);
 		}
-		&._active {
+		&._spoller-active {
 			&::before {
 				transform: translateY(-50%) rotateX(180deg);
 			}

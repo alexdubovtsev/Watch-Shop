@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', { "title": "Catalog" })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <!-- style="display: none;"  -->
+      <main class="page page__inner">
+        <div class="page__header">
+          <div class="page__container">
+            <nav class="page__breadcrumbs breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#" class="breadcrumbs__link">Классические часы</a>
+                  </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__current">Seiko SSA393J1</span>
+                  </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="page__product">
+            <div class="page__container">
+                
+            </div>
+        </div>
+
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    @@include('html/popup.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

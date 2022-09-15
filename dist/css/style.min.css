@@ -1099,6 +1099,11 @@ body._lock {
 .body-footer__rules {
   max-width: 51.25rem;
 }
+@media (max-width: 1370px) {
+  .body-footer__rules:not(:last-child) {
+    margin-bottom: 0.9375rem;
+  }
+}
 .body-footer__copy span {
   white-space: nowrap;
 }
@@ -3775,7 +3780,7 @@ body._lock {
   transition: transform 0.5s ease 0s;
   padding: 0.3125rem;
 }
-._init .spoller-item-footer__title._active::before {
+._init .spoller-item-footer__title._spoller-active::before {
   transform: translateY(-50%) rotateX(180deg);
 }
 

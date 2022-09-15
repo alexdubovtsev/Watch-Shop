@@ -45,6 +45,9 @@
     // .body-footer__rules
     &__rules {
         max-width: rem(820);
+        @media (max-width: #{$pc + px}){
+            &:not(:last-child) {margin-bottom: rem(15);}
+        }
     }
 
     // .body-footer__copy
