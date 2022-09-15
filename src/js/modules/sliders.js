@@ -1,7 +1,7 @@
 /* Документация слайдера: https://swiperjs.com/ */
 
 // Подключаем слайдер Swiper из node_modules
-import Swiper, { Navigation, Pagination, Parallax, Autoplay } from 'swiper';
+import Swiper, { Navigation, Pagination, Parallax, Autoplay, Thumbs } from 'swiper';
 /* Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
 EffectFade, Lazy, Manipulation
@@ -299,6 +299,108 @@ function initSliders() {
 				},
 			},
 
+	
+			on: {
+				init: function(swiper) {
+
+				}
+			}
+		});
+	};
+
+	if (document.querySelector('.thumbs-imgs')) {
+		const thumbsSwiper = new Swiper('.thumbs-imgs', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Pagination, Autoplay, Thumbs],
+
+			// effect: 'fade',
+	
+			// autoplay: {
+			// 	delay: 8000,
+			// 	disableOnInteraction: false,
+			// },
+			observer: true,
+			observeParents: true,
+			watchOverflow: true,
+			slidesPerView: 4,
+			spaceBetween: 16,
+			autoHeight: true,
+			speed: 800,
+			parallax: true,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+
+
+
+			// Dotts
+			pagination: {
+				el: '.products-recommend__dotts',
+				clickable: true,
+				dynamicBullets: true,
+
+			},
+			
+			breakpoints: {
+				// when window width is >= 992px
+				992: {
+				  slidesPerView: 3,
+				},
+				1370: {
+					slidesPerView: 4,
+					spaceBetween: 16,
+				},
+			},
+
+	
+			on: {
+				init: function(swiper) {
+
+				}
+			}
+		});
+		new Swiper('.imgs-product__slider', {
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation, Pagination, Autoplay, Thumbs],
+
+			// effect: 'fade',
+	
+			// autoplay: {
+			// 	delay: 8000,
+			// 	disableOnInteraction: false,
+			// },
+			thumbs: {
+				swiper: thumbsSwiper
+			},
+			observer: true,
+			observeParents: true,
+			watchOverflow: true,
+			slidesPerView: 1,
+			spaceBetween: 30,
+			autoHeight: true,
+			speed: 800,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+
+
+			
 	
 			on: {
 				init: function(swiper) {

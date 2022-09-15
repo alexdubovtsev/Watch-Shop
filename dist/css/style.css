@@ -238,7 +238,6 @@ body._lock {
 ._ibg {
   position: relative;
 }
-
 ._ibg img {
   position: absolute;
   top: 0;
@@ -3005,6 +3004,26 @@ body._lock {
     background-color: #d36969;
     color: #fff;
   }
+}
+
+.main-product {
+  display: grid;
+  grid-template-columns: 57.299270073% 1fr;
+}
+.main-product__imgs {
+  padding-right: 1.875rem;
+}
+
+.imgs-product {
+  display: grid;
+  gap: 1rem;
+}
+.imgs-product__slide {
+  padding-bottom: 77.3333333333%;
+}
+.thumbs-imgs__slide {
+  width: 9.375rem;
+  height: 9.375rem;
 }
 
 .btn {
