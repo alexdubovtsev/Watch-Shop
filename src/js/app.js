@@ -36,6 +36,8 @@ forms.formSubmit(true); // Validation (false - off)
 
 forms.formRating();
 
+forms.formQuantity();
+
 //import "./modules/select.js";
 
 import "./modules/range.js";

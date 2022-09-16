@@ -3013,7 +3013,6 @@ body._lock {
 .main-product__imgs {
   padding-right: 1.875rem;
 }
-
 .imgs-product {
   display: grid;
   gap: 1rem;
@@ -3038,7 +3037,7 @@ body._lock {
   background-color: #d36969;
   border-radius: 0.3125rem;
   box-shadow: 0 0.25rem 1.5625rem rgba(248, 30, 30, 0.5);
-  z-index: 5;
+  z-index: 3;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease 0s;
@@ -3091,7 +3090,7 @@ body._lock {
   height: 100%;
   top: 0;
   left: 0;
-  color: #ffd300;
+  color: #d36969;
 }
 
 .rating__items {
@@ -3606,6 +3605,47 @@ body._lock {
 .checkbox__text small {
   color: #d36969;
   padding-left: 0.3125rem;
+}
+
+.quantity {
+  width: 88px;
+  height: 40px;
+  display: flex;
+  border: 1px solid rgba(166, 166, 166, 0.45);
+}
+.quantity__button {
+  flex: 0 0 30px;
+  position: relative;
+  cursor: pointer;
+}
+.quantity__button::before, .quantity__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s ease 0s;
+  margin: 0px 0px 0px -4.5px;
+  background-color: #a6a6a6;
+  width: 9px;
+  height: 1px;
+}
+@media (any-hover: hover) {
+  .quantity__button:hover::before, .quantity__button:hover::after {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.quantity__button_plus::before {
+  transform: rotate(-90deg);
+}
+.quantity__input {
+  flex: 1 1 auto;
+}
+.quantity__input input {
+  height: 100%;
+  color: #a6a6a6;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
 }
 
 .popup {
