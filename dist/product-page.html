@@ -749,7 +749,8 @@
               <div class="main-product__body body-product">
                 <div class="body-product__header header-product">
                   <div class="header-product__line">
-                    <h1 class="header-product__title"></h1>
+                    <h1 class="header-product__title">
+                      Seiko SSA393J1</h1>
                     <a href="#" class="header-product__link __icon-compare"></a>
                     <a
                       href="#"
@@ -812,7 +813,7 @@
                 <div class="body-product__options options-product">
                   <div class="options-product__label">Браслет/ремешок</div>
                   <div class="options-product__value">
-                    <select name="form[]" data-class-modif="form">
+                    <select name="form[]" class="options-product__select" data-class-modif="form">
                       <option value="1" selected>Кожаный</option>
                       <option value="2">Металлический</option>
                       <option value="3">Пластиковый</option>
@@ -821,7 +822,7 @@
                   </div>
                   <div class="options-product__label">Циферблат</div>
                   <div class="options-product__value">
-                    <select name="form[]" data-class-modif="form">
+                    <select name="form[]" class="options-product__select" data-class-modif="form">
                       <option value="1" selected>Фиолетовый</option>
                       <option value="2">Черный</option>
                     </select>
@@ -837,9 +838,9 @@
                       class="actions-product__quantity quantity"
                     >
                       <button
-                        data-quantity-plus
+                        data-quantity-minus
                         type="button"
-                        class="quantity__button quantity__button_plus"
+                        class="quantity__button quantity__button_minus"
                       ></button>
                       <div class="quantity__input">
                         <input
@@ -851,20 +852,18 @@
                         />
                       </div>
                       <button
-                        data-quantity-minus
+                        data-quantity-plus
                         type="button"
-                        class="quantity__button quantity__button_minus"
+                        class="quantity__button quantity__button_plus"
                       ></button>
                     </div>
-                  </div>
 
-                  <div class="actions-product__btns">
-                    <button type="button" class="actions-product__cart btn">
-                      <span class="__icon-cart">В корзину</span>
-                    </button>
-                    <a href="#" class="actions-product__order"
-                      >Заказать в магазин</a
-                    >
+                    <div class="actions-product__btns">
+                      <button type="button" class="actions-product__cart btn">
+                        <span class="__icon-cart">В корзину</span>
+                      </button>
+                      <a href="#" class="actions-product__order btn-black">Заказать в магазин</a>
+                    </div>
                   </div>
                 </div>
               </div>

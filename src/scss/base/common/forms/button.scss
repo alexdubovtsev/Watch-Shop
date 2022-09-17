@@ -1,17 +1,18 @@
 .btn {
-    display: inline-block;
+    display: inline-flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
     font-size: rem(20);
     line-height: math.div(32 , 20);
     color: #fff;
-    border: 1px solid $color-red;
-    padding: rem(8) rem(40);
+    //border: 1px solid $color-red;
+    padding: rem(8) rem(30);
     background-color: $color-red;
     border-radius: rem(5);
-    box-shadow: 0 rem(4) rem(25) rgba(248, 30, 30, 0.5);
     z-index: 3;
-
+    box-shadow: 0 rem(4) rem(25) rgba(248, 30, 30, 0.35);
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease 0s;
@@ -30,10 +31,22 @@
         &:hover{
             box-shadow: 0 rem(4) rem(30) rgba(240, 39, 39, 0.65); 
         }
-        // &:hover::before{
-        //     width: 120%; 
-        // }
+
     }
+}
 
-
+.btn-black {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    padding: rem(8) rem(30);
+    background-color: $color-black;
+    border-radius: rem(5);
+    z-index: 3;
+    font-size: rem(18);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
 }

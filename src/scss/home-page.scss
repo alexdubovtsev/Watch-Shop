@@ -95,9 +95,10 @@
     // .slide-main-block__btn
     &__btn {
         @media (max-width: #{$mobileSmall + px}){
-              width: 100%;
+            width: 100%;
         }
     }
+
 }
 .controll-main-block {
     display: flex;

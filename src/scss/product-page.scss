@@ -3,8 +3,7 @@
 
 }
 .product-page {
-
-    // .product-page__container
+        // .product-page__container
     &__container {
     }
 
@@ -14,7 +13,9 @@
 }
 .main-product {
     display: grid;
-    grid-template-columns: prc(785, $maxWidthContainer) 1fr;
+    align-items: start;
+    grid-template-columns: prc(700, $maxWidthContainer) 1fr;
+    @include adaptive-value("padding-bottom", 120, 40);
     // .main-product__imgs
     &__imgs {
         padding-right: rem(30);
@@ -56,25 +57,46 @@
         //padding-bottom: prc(180,200);
         width: rem(150);
         height: rem(150);
+        @include adaptive-value("width", 150, 100, 1370, 320, 1);
+        @include adaptive-value("height", 150, 100, 1370, 320, 1);
+        cursor: pointer;
+        opacity: 0.8;
+        transition: all 0.3s ease 0s;
+        &.swiper-slide-thumb-active {
+            opacity: 1;
+        }
     }
 }
 
 .body-product {
-
+    background-color: #fefefe;
+    box-shadow: 0 rem(5) rem(20) rgba(0, 0, 0, 0.08);
+    padding: rem(30);
     // .body-product__header
     &__header {
+        border-bottom: rem(1) solid $color-silver;
+        padding-bottom: rem(30);
     }
 
     // .body-product__table
     &__table {
+        border-bottom: rem(1) solid $color-silver;
+        padding-bottom: rem(30);
+        padding-top: rem(30);
     }
 
     // .body-product__options
     &__options {
+        border-bottom: rem(1) solid $color-silver;
+        padding-bottom: rem(30);
+        padding-top: rem(30);
     }
 
     // .body-product__actions
     &__actions {
+        border-bottom: rem(1) solid $color-silver;
+        padding-bottom: rem(30);
+        padding-top: rem(30);
     }
 }
 
@@ -82,14 +104,38 @@
 
     // .header-product__line
     &__line {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+        &:not(:last-child) {margin-bottom: rem(15);}
     }
 
     // .header-product__title
     &__title {
+        font-weight: 600;
+        font-size: rem(24);
+        line-height: math.div(29 , 24);
+        flex: 1 1 auto;
     }
 
     // .header-product__link
     &__link {
+        color: $mainColor;
+        font-size: rem(24);
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover){
+            &:hover{
+                color: $color-red;
+            }
+        }
+        &.__icon-favourite {
+            color: $color-red;
+            @media (any-hover: hover){
+                &:hover{
+                    transform: scale(1.16);
+                }
+            }
+        }
     }
 
     // .header-product__rating
@@ -97,40 +143,25 @@
     }
 }
 
-.rating {
-
-    // .rating__body
-    &__body {
-    }
-
-    // .rating__active
-    &__active {
-    }
-
-    // .rating__items
-    &__items {
-    }
-
-    // .rating__item
-    &__item {
-    }
-
-    // .rating__value
-    &__value {
-    }
-}
 .table-product {
-
+    display: grid;
+    grid-template-columns: rem(210) 1fr;
+    row-gap: rem(20);
     // .table-product__label
     &__label {
+        align-self: center;
     }
 
     // .table-product__value
     &__value {
+        color: $color-grey;
     }
 }
 .options-product {
-
+    display: grid;
+    grid-template-columns: rem(210) 1fr;
+    row-gap: rem(20);
+    align-items: center;
     // .options-product__label
     &__label {
     }
@@ -143,10 +174,20 @@
 
     // .actions-product__price
     &__price {
+        font-size: rem(30);
+        line-height: math.div(37 , 30);
+        font-weight: 500;
+        display: inline-flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        &:not(:last-child) {margin-bottom: em(35, 30);}
     }
 
     // .actions-product__row
     &__row {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
     }
 
     // .actions-product__quantity
@@ -155,32 +196,32 @@
 
     // .actions-product__btns
     &__btns {
+        display: flex;
+        gap: rem(20);
+        flex: 1 1 auto;
+        justify-content: flex-end;
     }
 
     // .actions-product__cart
-    &__cart {
+    &__cart.btn {
+        box-shadow: 0 rem(4) rem(25) rgba(248, 30, 30, 0.1);
+        @media (any-hover: hover){
+            &:hover{
+                box-shadow: 0 rem(4) rem(30) rgba(240, 39, 39, 0.35); 
+            }
+        }
+        span {
+            display: inline-flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            gap: rem(10);
+            font-size: rem(18);
+        }
+
     }
 
     // .actions-product__order
     &__order {
+
     }
 }
-.quantity {
-
-    // .quantity__button
-    &__button {
-
-        // .quantity__button_plus
-        &_plus {
-        }
-
-        // .quantity__button_minus
-        &_minus {
-        }
-    }
-
-    // .quantity__input
-    &__input {
-    }
-}
-

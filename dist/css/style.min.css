@@ -3008,7 +3008,18 @@ body._lock {
 
 .main-product {
   display: grid;
-  grid-template-columns: 57.299270073% 1fr;
+  align-items: start;
+  grid-template-columns: 51.0948905109% 1fr;
+}
+@supports (padding-bottom: clamp( 2.5rem , 1.0185185185rem  +  7.4074074074vw , 7.5rem )) {
+  .main-product {
+    padding-bottom: clamp( 2.5rem , 1.0185185185rem  +  7.4074074074vw , 7.5rem );
+  }
+}
+@supports not (padding-bottom: clamp( 2.5rem , 1.0185185185rem  +  7.4074074074vw , 7.5rem )) {
+  .main-product {
+    padding-bottom: calc(2.5rem + 5 * (100vw - 20rem) / 67.5);
+  }
 }
 .main-product__imgs {
   padding-right: 1.875rem;
@@ -3023,21 +3034,160 @@ body._lock {
 .thumbs-imgs__slide {
   width: 9.375rem;
   height: 9.375rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s ease 0s;
+}
+@supports (width: clamp( 6.25rem , 5.2976190476rem  +  4.7619047619vw , 9.375rem )) {
+  .thumbs-imgs__slide {
+    width: clamp( 6.25rem , 5.2976190476rem  +  4.7619047619vw , 9.375rem );
+  }
+}
+@supports not (width: clamp( 6.25rem , 5.2976190476rem  +  4.7619047619vw , 9.375rem )) {
+  .thumbs-imgs__slide {
+    width: calc(6.25rem + 3.125 * (100vw - 20rem) / 65.625);
+  }
+}
+@supports (height: clamp( 6.25rem , 5.2976190476rem  +  4.7619047619vw , 9.375rem )) {
+  .thumbs-imgs__slide {
+    height: clamp( 6.25rem , 5.2976190476rem  +  4.7619047619vw , 9.375rem );
+  }
+}
+@supports not (height: clamp( 6.25rem , 5.2976190476rem  +  4.7619047619vw , 9.375rem )) {
+  .thumbs-imgs__slide {
+    height: calc(6.25rem + 3.125 * (100vw - 20rem) / 65.625);
+  }
+}
+.thumbs-imgs__slide.swiper-slide-thumb-active {
+  opacity: 1;
 }
 
+.body-product {
+  background-color: #fefefe;
+  box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.08);
+  padding: 1.875rem;
+}
+.body-product__header {
+  border-bottom: 0.0625rem solid rgba(192, 192, 192, 0.849);
+  padding-bottom: 1.875rem;
+}
+.body-product__table {
+  border-bottom: 0.0625rem solid rgba(192, 192, 192, 0.849);
+  padding-bottom: 1.875rem;
+  padding-top: 1.875rem;
+}
+.body-product__options {
+  border-bottom: 0.0625rem solid rgba(192, 192, 192, 0.849);
+  padding-bottom: 1.875rem;
+  padding-top: 1.875rem;
+}
+.body-product__actions {
+  border-bottom: 0.0625rem solid rgba(192, 192, 192, 0.849);
+  padding-bottom: 1.875rem;
+  padding-top: 1.875rem;
+}
+
+.header-product__line {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.header-product__line:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.header-product__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2083333333;
+  flex: 1 1 auto;
+}
+.header-product__link {
+  color: #000;
+  font-size: 1.5rem;
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .header-product__link:hover {
+    color: #d36969;
+  }
+}
+.header-product__link.__icon-favourite {
+  color: #d36969;
+}
+@media (any-hover: hover) {
+  .header-product__link.__icon-favourite:hover {
+    transform: scale(1.16);
+  }
+}
+.table-product {
+  display: grid;
+  grid-template-columns: 13.125rem 1fr;
+  row-gap: 1.25rem;
+}
+.table-product__label {
+  align-self: center;
+}
+.table-product__value {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.options-product {
+  display: grid;
+  grid-template-columns: 13.125rem 1fr;
+  row-gap: 1.25rem;
+  align-items: center;
+}
+.actions-product__price {
+  font-size: 1.875rem;
+  line-height: 1.2333333333;
+  font-weight: 500;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.actions-product__price:not(:last-child) {
+  margin-bottom: 1.1666666667em;
+}
+.actions-product__row {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.actions-product__btns {
+  display: flex;
+  gap: 1.25rem;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+}
+.actions-product__cart.btn {
+  box-shadow: 0 0.25rem 1.5625rem rgba(248, 30, 30, 0.1);
+}
+@media (any-hover: hover) {
+  .actions-product__cart.btn:hover {
+    box-shadow: 0 0.25rem 1.875rem rgba(240, 39, 39, 0.35);
+  }
+}
+.actions-product__cart.btn span {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0.625rem;
+  font-size: 1.125rem;
+}
 .btn {
-  display: inline-block;
+  display: inline-flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.6;
   color: #fff;
-  border: 1px solid #d36969;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 1.875rem;
   background-color: #d36969;
   border-radius: 0.3125rem;
-  box-shadow: 0 0.25rem 1.5625rem rgba(248, 30, 30, 0.5);
   z-index: 3;
+  box-shadow: 0 0.25rem 1.5625rem rgba(248, 30, 30, 0.35);
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease 0s;
@@ -3046,6 +3196,22 @@ body._lock {
   .btn:hover {
     box-shadow: 0 0.25rem 1.875rem rgba(240, 39, 39, 0.65);
   }
+}
+
+.btn-black {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 0.5rem 1.875rem;
+  background-color: #141414;
+  border-radius: 0.3125rem;
+  z-index: 3;
+  font-size: 1.125rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
 }
 
 .rating {
@@ -3235,6 +3401,18 @@ body._lock {
     width: 100%;
   }
 }
+.options-product__select {
+  font-family: inherit;
+  border: 0.0625rem solid rgba(192, 192, 192, 0.849);
+  padding: 0 1.25rem;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0.25rem;
+  height: 2.1875rem;
+}
+
 /* Functional styling;
  * These styles are required for noUiSlider to function.
  * You don't need to change these rules to apply your design.
@@ -3608,13 +3786,14 @@ body._lock {
 }
 
 .quantity {
-  width: 88px;
-  height: 40px;
+  width: 7.5rem;
+  height: 2.8125rem;
   display: flex;
-  border: 1px solid rgba(166, 166, 166, 0.45);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 0.25rem;
 }
 .quantity__button {
-  flex: 0 0 30px;
+  flex: 0 0 1.875rem;
   position: relative;
   cursor: pointer;
 }
@@ -3625,13 +3804,13 @@ body._lock {
   left: 50%;
   transition: all 0.3s ease 0s;
   margin: 0px 0px 0px -4.5px;
-  background-color: #a6a6a6;
+  background-color: rgba(192, 192, 192, 0.849);
   width: 9px;
   height: 1px;
 }
 @media (any-hover: hover) {
   .quantity__button:hover::before, .quantity__button:hover::after {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #d36969;
   }
 }
 .quantity__button_plus::before {
@@ -3642,8 +3821,8 @@ body._lock {
 }
 .quantity__input input {
   height: 100%;
-  color: #a6a6a6;
-  font-size: 12px;
+  color: #000;
+  font-size: 1rem;
   width: 100%;
   text-align: center;
 }
