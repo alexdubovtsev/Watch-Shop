@@ -3009,7 +3009,7 @@ body._lock {
 .main-product {
   display: grid;
   align-items: start;
-  grid-template-columns: 51.0948905109% 1fr;
+  row-gap: 1.25rem;
 }
 @supports (padding-bottom: clamp( 2.5rem , 1.0185185185rem  +  7.4074074074vw , 7.5rem )) {
   .main-product {
@@ -3021,8 +3021,15 @@ body._lock {
     padding-bottom: calc(2.5rem + 5 * (100vw - 20rem) / 67.5);
   }
 }
-.main-product__imgs {
-  padding-right: 1.875rem;
+@media (min-width: 991.98px) {
+  .main-product {
+    grid-template-columns: 51.0948905109% 1fr;
+  }
+}
+@media (min-width: 991.98px) {
+  .main-product__imgs {
+    padding-right: 1.875rem;
+  }
 }
 .imgs-product {
   display: grid;
@@ -3065,7 +3072,16 @@ body._lock {
 .body-product {
   background-color: #fefefe;
   box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.08);
-  padding: 1.875rem;
+}
+@supports (padding: clamp( 0.9375rem , 0.6597222222rem  +  1.3888888889vw , 1.875rem )) {
+  .body-product {
+    padding: clamp( 0.9375rem , 0.6597222222rem  +  1.3888888889vw , 1.875rem );
+  }
+}
+@supports not (padding: clamp( 0.9375rem , 0.6597222222rem  +  1.3888888889vw , 1.875rem )) {
+  .body-product {
+    padding: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 67.5);
+  }
 }
 .body-product__header {
   border-bottom: 0.0625rem solid rgba(192, 192, 192, 0.849);
@@ -3090,16 +3106,22 @@ body._lock {
 .header-product__line {
   display: flex;
   align-items: center;
-  gap: 0.625rem;
+  column-gap: 0.625rem;
+  row-gap: 0.625rem;
 }
 .header-product__line:not(:last-child) {
   margin-bottom: 0.9375rem;
+}
+@media (max-width: 479.98px) {
+  .header-product__line {
+    flex-wrap: wrap;
+  }
 }
 .header-product__title {
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.2083333333;
-  flex: 1 1 auto;
+  flex: 1 1 100%;
 }
 .header-product__link {
   color: #000;
@@ -3121,22 +3143,32 @@ body._lock {
 }
 .table-product {
   display: grid;
-  grid-template-columns: 13.125rem 1fr;
   row-gap: 1.25rem;
 }
 .table-product__label {
   align-self: center;
+  font-weight: 600;
 }
 .table-product__value {
   color: rgba(0, 0, 0, 0.7);
 }
+@media (min-width: 767.98px) {
+  .table-product {
+    grid-template-columns: 13.125rem 1fr;
+  }
+}
 
 .options-product {
   display: grid;
-  grid-template-columns: 13.125rem 1fr;
   row-gap: 1.25rem;
   align-items: center;
 }
+@media (min-width: 767.98px) {
+  .options-product {
+    grid-template-columns: 13.125rem 1fr;
+  }
+}
+
 .actions-product__price {
   font-size: 1.875rem;
   line-height: 1.2333333333;
@@ -3151,13 +3183,38 @@ body._lock {
 .actions-product__row {
   display: flex;
   align-items: center;
-  gap: 0.625rem;
+  gap: 1.25rem;
+}
+@media (max-width: 85.625em) {
+  .actions-product__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .actions-product__btns {
   display: flex;
   gap: 1.25rem;
   flex: 1 1 auto;
-  justify-content: flex-end;
+}
+@media (max-width: 85.625em) {
+  .actions-product__btns {
+    width: 100%;
+  }
+}
+@media (max-width: 37.5em) {
+  .actions-product__btns {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 85.625em) {
+  .actions-product__cart {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  .actions-product__cart {
+    flex: 0 1 100%;
+  }
 }
 .actions-product__cart.btn {
   box-shadow: 0 0.25rem 1.5625rem rgba(248, 30, 30, 0.1);
@@ -3174,11 +3231,28 @@ body._lock {
   gap: 0.625rem;
   font-size: 1.125rem;
 }
+.actions-product__order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 85.625em) {
+  .actions-product__order {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  .actions-product__order {
+    flex: 0 1 100%;
+  }
+}
+
 .btn {
   display: inline-flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+  height: 3.125rem;
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.6;
@@ -3202,6 +3276,7 @@ body._lock {
   display: inline-flex;
   text-align: center;
   align-items: center;
+  height: 3.125rem;
   font-weight: 600;
   padding: 0.5rem 1.875rem;
   background-color: #141414;
@@ -3787,7 +3862,7 @@ body._lock {
 
 .quantity {
   width: 7.5rem;
-  height: 2.8125rem;
+  height: 3.125rem;
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.7);
   border-radius: 0.25rem;

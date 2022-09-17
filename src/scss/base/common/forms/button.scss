@@ -3,6 +3,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    height: rem(50);
     font-weight: 600;
     font-size: rem(20);
     line-height: math.div(32 , 20);
@@ -39,6 +40,7 @@
     display: inline-flex;
     text-align: center;
     align-items: center;
+    height: rem(50);
     font-weight: 600;
     padding: rem(8) rem(30);
     background-color: $color-black;

@@ -323,7 +323,7 @@ function initSliders() {
 			observer: true,
 			observeParents: true,
 			watchOverflow: true,
-			slidesPerView: 4,
+			slidesPerView: 2,
 			spaceBetween: 16,
 			autoHeight: true,
 			speed: 800,
@@ -374,10 +374,10 @@ function initSliders() {
 
 			// effect: 'fade',
 	
-			// autoplay: {
-			// 	delay: 8000,
-			// 	disableOnInteraction: false,
-			// },
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
 			thumbs: {
 				swiper: thumbsSwiper
 			},
