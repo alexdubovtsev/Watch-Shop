@@ -14,7 +14,7 @@ functions.spollers();
 
 // functions.showMore();
 
-// functions.tabs();
+functions.tabs();
 
 functions.popups();
 
@@ -41,6 +41,9 @@ forms.formQuantity();
 //import "./modules/select.js";
 
 import "./modules/range.js";
+
+import "./modules/tippy.js";
+
 
 // todo Slider (Swiper)
 
