@@ -1,6 +1,6 @@
 # Watch-Shop
 
-## ⌚Online watch-shop "Timeless"
+## 🕑 Online watch-shop "Timeless"
 
 Site layout using SCSS preprocessor
 
