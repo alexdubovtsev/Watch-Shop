@@ -16,4 +16,5 @@ I used technologies such as
 * Gallery (lightgalleryjs.com)
 * Tooltips (tippy.js)
 * Tabs
+* BEM-naming
 
